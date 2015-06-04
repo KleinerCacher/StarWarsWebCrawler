@@ -61,9 +61,12 @@
     <Compile Include="Transportation.cs" />
     <Compile Include="TransportationCrawler.cs" />
     <Compile Include="TransportationMin.cs" />
+    <Compile Include="TransportationWeaponMapping.cs" />
     <Compile Include="Vehicle.cs" />
+    <Compile Include="WeaponFactory.cs" />
+    <Compile Include="WeaponQuality.cs" />
+    <Compile Include="Weapon.cs" />
     <Compile Include="Webcrawler.cs" />
-    <Compile Include="XmlGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

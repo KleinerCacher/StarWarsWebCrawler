@@ -48,7 +48,7 @@ namespace WebCrawler
 
 
             List<IndexData> transports = new List<IndexData>();
-            //int i = 0;
+            int i = 0;
             foreach (TransportationMin trans in transMins)
             {
                 switch (type)
@@ -61,11 +61,11 @@ namespace WebCrawler
                         break;
                 }
 
-                //if (i == 5)
-                //{
-                //    break;
-                //}
-                //i++;
+                if (i == 2)
+                {
+                    break;
+                }
+                i++;
             }
 
             return transports;

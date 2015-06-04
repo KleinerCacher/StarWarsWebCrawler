@@ -3,6 +3,7 @@ using System.Linq;
 using System.Web;
 using System;
 using System.Globalization;
+using System.Collections.Generic;
 
 namespace WebCrawler
 {
@@ -32,6 +33,7 @@ namespace WebCrawler
         public string Rarity { get; set; }
         public string HardPoints { get; set; }
         public string Weapons { get; set; }
+        public List<Weapon> WeaponList { get; set; }
         public string Indexes { get; set; }
 
         /// <summary>
@@ -39,6 +41,7 @@ namespace WebCrawler
         /// </summary>
         public Transportation()
         {
+            WeaponList = new List<Weapon>();
         }
 
         /// <summary>
@@ -100,6 +103,8 @@ namespace WebCrawler
             HardPoints = GetSingleNodeTextByNodeCollection(itemDetailNodes, "Customization");
             Weapons = GetSingleNodeTextByNodeCollection(itemDetailNodes, "Weapons");
             Indexes = GetSingleNodeTextByNodeCollection(itemDetailNodes, "Indexes");
+
+            WeaponList = TransportationWeaponMapping.GetWeaponsByTransportationName(Name);
         }
 
         private static string GetSingleNodeText(HtmlDocument htmlNode, string xpath)

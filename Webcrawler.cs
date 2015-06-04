@@ -24,7 +24,6 @@ namespace WebCrawler
 
             data.Vehicles = TransportationCrawler.CrawlTransportation(baseUrl, TransportationCrawler.Type.Vehicle);
             ExcelGenerator.GenerateExcelFile("vehicles.xlsx", data.Vehicles);
-            // XmlGenerator.GenerateXml("IndexData.xml", data);
         }
     }
 }
