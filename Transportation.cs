@@ -104,7 +104,7 @@ namespace WebCrawler
             Weapons = GetSingleNodeTextByNodeCollection(itemDetailNodes, "Weapons");
             Indexes = GetSingleNodeTextByNodeCollection(itemDetailNodes, "Indexes");
 
-            WeaponList = TransportationWeaponMapping.GetWeaponsByTransportationName(Name);
+            WeaponList = TransportationWeaponMapping.Instance.GetWeaponsByTransportationName(Name);
         }
 
         private static string GetSingleNodeText(HtmlDocument htmlNode, string xpath)

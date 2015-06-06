@@ -4,6 +4,18 @@ namespace WebCrawler
 {
     public static class WeaponFactory
     {
+        public static Weapon CreateWeapon(string[] weaponStats)
+        {
+            if (weaponStats.Length == 3)
+            {
+                return CreateWeapon(weaponStats[0], weaponStats[1], weaponStats[2]);
+            }
+            else
+            {
+                return CreateWeapon(weaponStats[0], weaponStats[1]);
+            }
+        }
+
         public static Weapon CreateWeapon(
             string mountShortCut,
             string weaponShortcut,
