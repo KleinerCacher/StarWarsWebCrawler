@@ -88,11 +88,11 @@ namespace WebCrawler
         private static string GetWeaponListText(List<Weapon> list)
         {
             StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < list.Count -1; i++)
+            for (int i = 0; i < list.Count; i++)
             {
                 sb.Append(GetWeaponText(list[i]));
-            
-                if (i != list.Count - 2)
+
+                if (i != list.Count - 1)
                 {
                     sb.AppendLine();
                     sb.AppendLine();
@@ -116,11 +116,11 @@ namespace WebCrawler
                 sb.Append("; ");
             }
 
-            for (int i = 0; i < weapon.WeaponQualities.Count - 1; i++)
+            for (int i = 0; i < weapon.WeaponQualities.Count; i++)
             {
                 sb.Append(GetWeaponQualityText(weapon.WeaponQualities[i]));
 
-                if (i != weapon.WeaponQualities.Count - 2)
+                if (i != weapon.WeaponQualities.Count - 1)
                 {
                     sb.Append(", ");
                 }

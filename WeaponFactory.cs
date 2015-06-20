@@ -94,11 +94,60 @@ namespace WebCrawler
                     throw new ArgumentException("Shortcut not available");
             }
 
-            // TODO MountShortCut
-            weapon.FireArcDescription = "Some Arc";
-            weapon.FireArc = "Some Arc";
+            FillInWeaponMount(weapon, mountShortCut);
 
             return weapon;
+        }
+
+        private static void FillInWeaponMount(Weapon weapon, string mountShortCut)
+        {
+            var unitsMap = new[] { "Zero", "One", "Two", "Three", "Four",
+                "Five", "Six", "Seven", "Eight", "Nine", "Ten"};
+
+            const string forward = "Forward";
+            const string descRetractableForward = "Retractable forward";
+
+            int number = -1;
+            if (Char.IsDigit(mountShortCut[0]))
+            {
+                number = int.Parse(mountShortCut[0].ToString());
+                mountShortCut = mountShortCut.Substring(1);
+            }
+
+            string fireArc = string.Empty;
+            string description = string.Empty;
+            switch (mountShortCut)
+            {
+                case "Fo":
+                    fireArc = forward;
+                    description = forward;
+                    break;
+                case "ReFo":
+                    fireArc = forward;
+                    description = descRetractableForward;
+                    break;
+                default:
+                    throw new ArgumentException("Fire Arc Shortcut not availaible");
+                    break;
+            }
+
+            string numberString = string.Empty;
+            if (number != -1)
+            {
+                if (number > unitsMap.Length)
+                {
+                    numberString = number + " ";
+                }
+                else
+                {
+                    numberString = unitsMap[number] + " ";
+                }
+                
+                description = description.ToLower();
+            }
+
+            weapon.FireArcDescription = numberString + description + " mounted";
+            weapon.FireArc = fireArc;
         }
     }
 }
