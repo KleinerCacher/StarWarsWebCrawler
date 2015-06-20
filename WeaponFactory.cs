@@ -128,7 +128,6 @@ namespace WebCrawler
                     break;
                 default:
                     throw new ArgumentException("Fire Arc Shortcut not availaible");
-                    break;
             }
 
             string numberString = string.Empty;

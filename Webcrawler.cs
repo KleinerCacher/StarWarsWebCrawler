@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
 namespace WebCrawler
 {
@@ -24,6 +26,17 @@ namespace WebCrawler
 
             data.Vehicles = TransportationCrawler.CrawlTransportation(baseUrl, TransportationCrawler.Type.Vehicle);
             ExcelGenerator.GenerateExcelFile("vehicles.xlsx", data.Vehicles);
+
+            GenerateListOfShips(data);
+        }
+
+        private void GenerateListOfShips(AllIndexData data)
+        {
+            List<string> namesOfShips = new List<string>();
+            namesOfShips.AddRange(data.SpaceShips.Select(s => s.Name));
+            namesOfShips.AddRange(data.Vehicles.Select(v => v.Name));
+
+            File.WriteAllLines("Transportation.txt", namesOfShips);
         }
     }
 }
