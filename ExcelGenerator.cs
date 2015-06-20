@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
+using System;
+using System.Text;
 
 namespace WebCrawler
 {
@@ -53,6 +55,11 @@ namespace WebCrawler
                             {
                                 worksheet.Cells[row, column].Value = value;
                             }
+                            else if (value is List<Weapon>)
+                            {
+                                string weaponListText = GetWeaponListText(value as List<Weapon>);
+                                worksheet.Cells[row, column].Value = weaponListText;
+                            }
                             else
                             {
                                 int number;
@@ -64,7 +71,7 @@ namespace WebCrawler
                                 else
                                 {
                                     worksheet.Cells[row, column].Value = valueAsString;
-                                }                                
+                                }
                             }
 
                             column++;
@@ -75,6 +82,62 @@ namespace WebCrawler
                 }
 
                 pck.Save();
+            }
+        }
+
+        private static string GetWeaponListText(List<Weapon> list)
+        {
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < list.Count -1; i++)
+            {
+                sb.Append(GetWeaponText(list[i]));
+            
+                if (i != list.Count - 2)
+                {
+                    sb.AppendLine();
+                    sb.AppendLine();
+                }
+            }
+
+            return sb.ToString();
+        }
+
+        private static string GetWeaponText(Weapon weapon)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendFormat("{0} Range ", weapon.Range);
+            sb.AppendFormat("({0} {1})", weapon.FireArcDescription, weapon.Name);
+            sb.AppendLine();
+            sb.AppendFormat("Fire Arc {0}; Damage {1}, Critical Hit {2}",
+                                weapon.FireArc, weapon.Damage, weapon.Criticalhit);
+
+            if (weapon.WeaponQualities.Count > 0)
+            {
+                sb.Append("; ");
+            }
+
+            for (int i = 0; i < weapon.WeaponQualities.Count - 1; i++)
+            {
+                sb.Append(GetWeaponQualityText(weapon.WeaponQualities[i]));
+
+                if (i != weapon.WeaponQualities.Count - 2)
+                {
+                    sb.Append(", ");
+                }
+            }
+
+            return sb.ToString();
+        }
+
+        private static string GetWeaponQualityText(WeaponQuality quality)
+        {
+            if (quality.Value == 0)
+            {
+                return quality.Name;
+            }
+            else
+            {
+                return quality.Name + " " + quality.Value;
             }
         }
     }

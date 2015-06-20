@@ -31,12 +31,8 @@ namespace WebCrawler
             return weapon;
         }
 
-        public static Weapon CreateWeapon(
-            string mountShortCut,
-            string weaponShortcut)
+        public static Weapon CreateWeapon(string mountShortCut, string weaponShortcut)
         {
-            // TODO MountShortCut
-
             Weapon weapon = null;
             switch (weaponShortcut.ToUpperInvariant())
             {
@@ -97,6 +93,10 @@ namespace WebCrawler
                 default:
                     throw new ArgumentException("Shortcut not available");
             }
+
+            // TODO MountShortCut
+            weapon.FireArcDescription = "Some Arc";
+            weapon.FireArc = "Some Arc";
 
             return weapon;
         }
