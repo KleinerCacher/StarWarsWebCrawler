@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using System.Linq;
 
 namespace WebCrawler
 {
@@ -71,15 +72,31 @@ namespace WebCrawler
             return quality;
         }
 
-        public static List<WeaponQuality> GetWeaponQualitiesByListOfShortcuts(string commaSeperatedShortcuts)
+        internal static List<WeaponQuality> GetWeaponQualitiesByListOfShortcuts(string commaSeperatedShortcuts)
         {
-            string[] splittedShortcuts = 
+            List<WeaponQuality> qualities = new List<WeaponQuality>();
+            return AddOrAremoveWeaponQualities(qualities, commaSeperatedShortcuts);
+        }
+
+        internal static List<WeaponQuality> AddOrAremoveWeaponQualities(
+                                                List<WeaponQuality> qualities,
+                                                string commaSeperatedShortcuts)
+        {
+            string[] splittedShortcuts =
                 commaSeperatedShortcuts.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
 
-            List<WeaponQuality> qualities = new List<WeaponQuality>();
             foreach (string shortcut in splittedShortcuts)
             {
-                qualities.Add(GetWeaponQualityByShortcut(shortcut));
+                bool shouldDelete = false;
+                if (shortcut[0] == '-')
+                {
+                    var removeQuality = GetWeaponQualityByShortcut(shortcut.Substring(1));
+                    qualities.RemoveAll(q => q.Name == removeQuality.Name);
+                }
+                else
+                {
+                    qualities.Add(GetWeaponQualityByShortcut(shortcut));
+                }
             }
 
             return qualities;

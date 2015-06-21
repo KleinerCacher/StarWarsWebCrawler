@@ -24,8 +24,9 @@ namespace WebCrawler
             Weapon weapon = CreateWeapon(mountShortCut, weaponShortcut);
             if (weapon != null)
             {
-                weapon.WeaponQualities.AddRange(
-                    WeaponQuality.GetWeaponQualitiesByListOfShortcuts(additionalCommaSeperatedWeaponQualities));
+                weapon.WeaponQualities =
+                           WeaponQuality.AddOrAremoveWeaponQualities(
+                               weapon.WeaponQualities, additionalCommaSeperatedWeaponQualities);
             }
 
             return weapon;
@@ -141,7 +142,7 @@ namespace WebCrawler
                 {
                     numberString = unitsMap[number] + " ";
                 }
-                
+
                 description = description.ToLower();
             }
 

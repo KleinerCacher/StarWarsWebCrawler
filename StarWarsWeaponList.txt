@@ -1,1 +1,196 @@
 ﻿4R3 Light Assault Transport#ReFo;LCM;Lin1#2ReFo;icl;Lin1#2Fo;ptl
+A-7 Hunter Interceptor#Fo;LCM;Lin1
+A-Type Stiletto#Fo;LCM;Acc1#Fo;CM;-Lim,-SF,Acc1,Lim1
+A/SF-01 'B-Wing' Heavy Fast Attack Starfighter
+Action VI Bulk Transport
+Alpha-3 Nimbus 'V-Wing' Interceptor
+Alpha-class XG-1 'Star Wing' Assault Gunboat
+Armos Modular Transport
+Baudo-class Star Yacht
+Blockade Bandit
+Bloodblade
+BTL-A4 Y-Wing Attack Starfighter
+BTL-S3 Y-Wing Attack Starfighter
+BTS-A2 'H-Wing' Long-range Strike Starfighter
+CEC WUD-500 Star Yacht
+CL-1c Lancet Interceptor
+Cloakshape Fighter
+Consular-Class Light Assault Cruiser
+CorelliSpace Gymsnor-3 Light Freighter
+CorelliSpace Gymsnor-4 Light Freighter
+CR90 Corvette
+CR92A Assassin-Class Corvette
+CSS-1 Corellian Star Shuttle
+D-Type Stealth Freighter
+Delta-6 System Defense Starfighter
+DP20 Gunship
+Dreadnought-Class Heavy Cruiser
+E-7 E-Wing Multi-Role Starfighter
+EF76 Nebulon-B Escort Frigate
+Escape Pod
+Firespray-31 System Patrol Craft
+GAT-12H Skipray Blastboat
+Ghtroc 720 Light Freighter
+Golan I Space Defense Platform
+Gozanti-Class Armed Transport
+GR-75 Medium Transport
+GX1 Short Hauler
+H-60 Tempest Heavy Bomber
+HH-87 Starhopper Starfighter
+HLAF-500 Starfighter
+HT-2200 Medium Freighter
+HWK-1000 Light Freighter
+HWK-290 Light Freighter
+ILH-KK Citadel-Class Light Freighter
+Imperial Customs Frigate
+Imperial I-Class Star Destroyer
+Imperial System Patrol Craft IPV-1
+Incom A-24 Sleuth-Class Scout Ship
+Incom A-36 Pathfinder-Class Force Reconnaissance Vessel
+Indulgent-Class Luxury Starliner
+Interdictor-Class Heavy Cruiser
+ISO-One
+J-Type Star Skiff
+JM-5000 Jumpmaster Long Range Scout
+Kappa-Class Shuttle
+Keldabe-Class Battleship
+LAF-250 Starfighter
+Lambda-Class T-4A Long Range Shuttle
+Lancer-Class Frigate
+Life Boat
+Loronar E-9 Explorer-Class Armed Long-Range Scout Vessel
+Luxurious-class Yacht
+MandalMotors M22-T Krayt Gunship
+MandalMotors M3-A Scyk Interceptor
+Marauder-Class Assault Corvette
+MC80 Liberty Type Star Cruiser
+Mobquet Medium Transport
+Modified Cloakshape Starfighter
+Modified TIE Bomber
+Nightflyer
+PB-950 Patrol Boat
+PPB Pocket Patrol Boat
+Praetor II-Class Star Battlecruiser
+Preybird-Class Starfighter
+Quasar Fire-class Escort Carrier
+R-41 Starchaser
+R60 'T-Wing' Interceptor
+Regulator-Class Patrol Vessel
+Rendili Stardrive Neutron Star-Class Bulk Cruiser
+RZ-1 'A-Wing' Light Interceptor
+S-Type Racing Sloop
+Secutor-class Battlecarrier
+Selonian Coneship
+Sentinel-Class Landing Craft
+Shadow Raptor
+Shuttle Pod
+SoroSuub Luxury 3000 Space Yacht
+Space Master Medium Transport
+Star Galleon Armed Transport
+Starbolt Assault Carrier
+Starlight-class Light Freighter
+Starwind Pleasure Yacht
+Surronian Conqueror-Class Assault Ship
+Suwantek TL-1200 Transport
+T-65B 'X-Wing' Multi-Role Starfighter
+Tam Blackstar's TIE Hunter
+Temple-Class Heavy Freighter
+The Deep Dark
+The Diligent
+The Eternal Wrath
+The Venture
+TIE/AG 'Aggressor' Starfighter
+TIE/D 'Defender' Multi-Role Starfighter
+TIE/HU 'Hunter' Multi-role Starfighter
+TIE/IN Interceptor
+TIE/IT Interdictor Starfighter
+TIE/LN Starfighter
+TIE/PH 'Phantom' Multi-role Stealth Starfighter
+TIE/SA Tactical Bomber
+Ton-Falk-class Escort Carrier
+Ubrikkian Industries Kossak-Class Frigate
+Ubrikkian Industries Modified Minstrel-Class Space Yacht
+Ubrikkian Industries Seltiss-2 Caravel
+Victory-Class Star Destroyer
+Vigil-Class Corvette
+Vindicator-Class Heavy Cruiser
+VT-49 Decimator
+Wayfarer-Class Medium Freighter
+Xanter-Class Deep-Space Exploration Frigate
+Xiytiar-Class Heavy Transport
+Y164 Slave Transport
+YG-4210 Light Freighter
+YG-4400 Light Freighter
+YKL-37R Nova Courier
+YQ-400 Monitor-Class System Patrol Ship
+YT-1000 Light Freighter
+YT-1200 Light Freighter
+YT-1210 Light Freighter
+YT-1300 Light Freighter
+YT-1760 Small Transport
+YT-2000 Light Freighter
+YT-2400 Light Freighter
+YV-560 Light Freighter
+YV-929 Light Freighter
+YZ-775 Medium Transport
+Z-95-AF4 Headhunter
+Z-95-AF4-H 'Heavy-95' Multi-role Starfighter
+1-L Imperial-Series Repulsor Tank
+A-11 Model III 'Burrower'
+A-19 'Iron Crawler' Armored Transport
+Airspeeder
+All Terrain Armored Transport
+All Terrain Personal Transport
+All Terrain Riot Control Transport
+All Terrain Scout Transport
+All-Terrain Anti-Aircraft
+Alliance T-47 Airspeeder
+Alliance T-47 Sandspeeder
+Aratech 'Shiphand' Cargo Skiff
+Aratech 57-D Speeder Bike
+Aratech 74-Z Military Speeder Bike
+Arrow-7 Airspeeder, Customized
+AT-EST Exploration and Survey Walker
+AV-21 Landspeeder
+CAV-11 'Condor' Airspeeder
+CEC D-22 'Screamer' Speeder Bike
+Corellian Mining Corporation Digger Crawler
+G35 'Silver Cloud' Airspeeder
+Guardian 5E Personal Defense Speeder
+Hunchback Construction Strider
+Hutt Repulsorsled
+I-C2 Civil-Industrial Droid
+Incom T-16 Skyhopper
+Incom T-47 Airspeeder
+Invader AA-9 Assault Airspeeder
+Jawa Salvage Skiff
+KV Swoop
+Mauler Tactical Responder
+MEV2 'Dug Digger'
+Mobquet Flare-S Swoop
+Mobquet S-5 'Flashfury' Swoop
+MSP100 Pteropter Hover Pod
+Nebulon-Q Racing Swoop
+Needle NE-4 Cloud Car Interceptor
+Ord Radama Landspeeder
+Overwatch MC-2 Mobile Command Speeder
+Panther Police Interceptor
+Personnel Carrier
+PTB-625 Heavy Bomber
+Retrofitted AT-AT
+Rush Troop Transport Speeder
+Slightly Rusted AT-St Walker
+SoroSuub Seraph 'Flash Speeder'
+Storm IV Cloud Car
+Storm IV Cloud Car (Wing Guard variant)
+SU-40 High-Performance Airspeeder
+Superhaul Model II Cargo Skiff
+The Superflare -- Modified Mobquet Flare-S Swoop
+Trast A-A5 Heavy Speeder Truck
+Ubrikkian Industries Bantha-II Cargo Skiff
+Ubrikkian Industries Luxury-Class Sail Barge
+Ubrikkian Industries Pongeeta-class Swamp Speeder
+V-35 Courier Landspeeder
+V5 Medium Cargo Floater
+X-34 Landspeeder
+Zephyr-G Swoop
