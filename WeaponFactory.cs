@@ -111,6 +111,7 @@ namespace WebCrawler
             const string descHardpoint = "Hardpoint";
             const string descRetractableForward = "Retractable forward";
             const string descTurretAll = "Turret";
+            const string descTurretForward = "Forward, Port and Starbord";
             const string descPortAndStarbordWing = "Port and Starbord wing";
             const string descPortAndStarboardTurret = "Port and Starbord Turret";
             const string descDorsalAndVentral = "Dorsal and Ventral Turret";
@@ -131,37 +132,37 @@ namespace WebCrawler
 
             string fireArc = string.Empty;
             string description = string.Empty;
-            switch (mountShortCut)
+            switch (mountShortCut.ToUpperInvariant())
             {
-                case "Fo":
+                case "FO":
                     fireArc = forward;
                     description = forward;
                     break;
-                case "ReFo":
+                case "REFO":
                     fireArc = forward;
                     description = descRetractableForward;
                     break;
-                case "TFo":
+                case "TFO":
                     fireArc = forward;
-                    description = descTurretAll;
+                    description = descTurretForward;
                     break;
-                case "TAll":
+                case "TALL":
                     fireArc = all;
                     description = descTurretAll;
                     break;
-                case "HaFo":
+                case "HAFO":
                     fireArc = forward;
                     description = descHardpoint;
                     break;
-                case "PoStWinFo":
+                case "POSTWINFO":
                     fireArc = forward;
                     description = descPortAndStarbordWing;
                     break;
-                case "TDoVen":
+                case "TDOVEN":
                     fireArc = all;
                     description = descDorsalAndVentral;
                     break;
-                case "TPoStSi":
+                case "TPOSTSI":
                     fireArc = portAndStarboard;
                     description = descPortAndStarboardTurret;
                     break;

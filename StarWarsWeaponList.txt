@@ -11,15 +11,15 @@ Blockade Bandit#TDoVen2;TLM;lin1#2TPoStSi;TLL
 Bloodblade#Fo;AB#Fo;TBl
 BTL-A4 Y-Wing Attack Starfighter#TFo2;icl;Lin1#Fo;lcm;Lin1#Fo;ptl
 BTL-S3 Y-Wing Attack Starfighter#TAll2;icl;Lin1#Fo;lcm;Lin1#Fo;ptl
-BTS-A2 'H-Wing' Long-range Strike Starfighter
-CEC WUD-500 Star Yacht
-CL-1c Lancet Interceptor
-Cloakshape Fighter
-Consular-Class Light Assault Cruiser
-CorelliSpace Gymsnor-3 Light Freighter
-CorelliSpace Gymsnor-4 Light Freighter
-CR90 Corvette
-CR92A Assassin-Class Corvette
+BTS-A2 'H-Wing' Long-range Strike Starfighter#Tall;lcm#Fo2;icl;Lin1#Fo;ptl
+CEC WUD-500 Star Yacht#Fo2;BCl;Lin1
+CL-1c Lancet Interceptor#Fo2;lcm;lin1
+Cloakshape Fighter#Fo;lcl;Lin1#Fo;cm
+Consular-Class Light Assault Cruiser#Tfo2;ich#2TDoven2;Tll;Lin1
+CorelliSpace Gymsnor-3 Light Freighter#Tall;lcm
+CorelliSpace Gymsnor-4 Light Freighter#Tall;lcm
+CR90 Corvette#TDoven2;tlm;lin1#2TPOSTSI;tll
+CR92A Assassin-Class Corvette#3TPOSTSI2;tlm;lin1#TDoven;QLC#Fo;ptl#Fo;tbm
 CSS-1 Corellian Star Shuttle
 D-Type Stealth Freighter
 Delta-6 System Defense Starfighter
