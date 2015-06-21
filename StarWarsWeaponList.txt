@@ -1,16 +1,16 @@
-﻿4R3 Light Assault Transport#ReFo;LCM;Lin1#2ReFo;icl;Lin1#2Fo;ptl
+﻿4R3 Light Assault Transport#ReFo;LCM;Lin1#2ReFo2;icl;Lin1#2Fo;ptl
 A-7 Hunter Interceptor#Fo;LCM;Lin1
 A-Type Stiletto#Fo;LCM;Acc1#Fo;CM;-Lim,-SF,Acc1,Lim1
-A/SF-01 'B-Wing' Heavy Fast Attack Starfighter
-Action VI Bulk Transport
-Alpha-3 Nimbus 'V-Wing' Interceptor
-Alpha-class XG-1 'Star Wing' Assault Gunboat
-Armos Modular Transport
-Baudo-class Star Yacht
-Blockade Bandit
-Bloodblade
-BTL-A4 Y-Wing Attack Starfighter
-BTL-S3 Y-Wing Attack Starfighter
+A/SF-01 'B-Wing' Heavy Fast Attack Starfighter#HaFo;icl;Lin2#HaFo;lch
+Action VI Bulk Transport#
+Alpha-3 Nimbus 'V-Wing' Interceptor#PoStWinFo2;lcl;lin3#Fo;CM
+Alpha-class XG-1 'Star Wing' Assault Gunboat#Fo;lcm;Lin1#Fo;icl;lin1#Fo;CM
+Armos Modular Transport#
+Baudo-class Star Yacht#TAll;lcm
+Blockade Bandit#TDoVen2;TLM;lin1#2TPoStSi;TLL
+Bloodblade#Fo;AB#Fo;TBl
+BTL-A4 Y-Wing Attack Starfighter#TFo2;icl;Lin1#Fo;lcm;Lin1#Fo;ptl
+BTL-S3 Y-Wing Attack Starfighter#TAll2;icl;Lin1#Fo;lcm;Lin1#Fo;ptl
 BTS-A2 'H-Wing' Long-range Strike Starfighter
 CEC WUD-500 Star Yacht
 CL-1c Lancet Interceptor

@@ -106,13 +106,27 @@ namespace WebCrawler
                 "Five", "Six", "Seven", "Eight", "Nine", "Ten"};
 
             const string forward = "Forward";
+            const string all = "All";
+            const string portAndStarboard = "Port and Starbord";
+            const string descHardpoint = "Hardpoint";
             const string descRetractableForward = "Retractable forward";
+            const string descTurretAll = "Turret";
+            const string descPortAndStarbordWing = "Port and Starbord wing";
+            const string descPortAndStarboardTurret = "Port and Starbord Turret";
+            const string descDorsalAndVentral = "Dorsal and Ventral Turret";
 
-            int number = -1;
+            int numberOfWeapons = -1;
             if (Char.IsDigit(mountShortCut[0]))
             {
-                number = int.Parse(mountShortCut[0].ToString());
+                numberOfWeapons = int.Parse(mountShortCut[0].ToString());
                 mountShortCut = mountShortCut.Substring(1);
+            }
+
+            int numberOfLinkedWeapons = -1;
+            if (Char.IsDigit(mountShortCut[mountShortCut.Length - 1]))
+            {
+                numberOfLinkedWeapons = int.Parse(mountShortCut[mountShortCut.Length - 1].ToString());
+                mountShortCut = mountShortCut.Remove(mountShortCut.Length - 1);
             }
 
             string fireArc = string.Empty;
@@ -127,26 +141,63 @@ namespace WebCrawler
                     fireArc = forward;
                     description = descRetractableForward;
                     break;
+                case "TFo":
+                    fireArc = forward;
+                    description = descTurretAll;
+                    break;
+                case "TAll":
+                    fireArc = all;
+                    description = descTurretAll;
+                    break;
+                case "HaFo":
+                    fireArc = forward;
+                    description = descHardpoint;
+                    break;
+                case "PoStWinFo":
+                    fireArc = forward;
+                    description = descPortAndStarbordWing;
+                    break;
+                case "TDoVen":
+                    fireArc = all;
+                    description = descDorsalAndVentral;
+                    break;
+                case "TPoStSi":
+                    fireArc = portAndStarboard;
+                    description = descPortAndStarboardTurret;
+                    break;
                 default:
                     throw new ArgumentException("Fire Arc Shortcut not availaible");
             }
 
-            string numberString = string.Empty;
-            if (number != -1)
+            string numberOfWeaponsString = string.Empty;
+            if (numberOfWeapons != -1)
             {
-                if (number > unitsMap.Length)
+                if (numberOfWeapons > unitsMap.Length)
                 {
-                    numberString = number + " ";
+                    numberOfWeaponsString = numberOfWeapons + " ";
                 }
                 else
                 {
-                    numberString = unitsMap[number] + " ";
+                    numberOfWeaponsString = unitsMap[numberOfWeapons] + " ";
                 }
 
                 description = description.ToLower();
             }
 
-            weapon.FireArcDescription = numberString + description + " mounted";
+            string numberOfLinkedWeaponsString = string.Empty;
+            if (numberOfLinkedWeapons != -1)
+            {
+                switch (numberOfLinkedWeapons)
+                {
+                    case 2:
+                        numberOfLinkedWeaponsString += " twin";
+                        break;
+                    default:
+                        throw new ArgumentException("Number Of Linked Weapons Not Available");
+                }
+            }
+
+            weapon.FireArcDescription = numberOfWeaponsString + description + " mounted" + numberOfLinkedWeaponsString;
             weapon.FireArc = fireArc;
         }
     }
