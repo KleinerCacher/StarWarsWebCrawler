@@ -20,7 +20,7 @@ CorelliSpace Gymsnor-3 Light Freighter#Tall;lcm
 CorelliSpace Gymsnor-4 Light Freighter#Tall;lcm
 CR90 Corvette#TDoven2;tlm;lin1#2TPOSTSI;tll
 CR92A Assassin-Class Corvette#3TPOSTSI2;tlm;lin1#TDoven;QLC#Fo;ptl#Fo;tbm
-CSS-1 Corellian Star Shuttle
+CSS-1 Corellian Star Shuttle#
 D-Type Stealth Freighter
 Delta-6 System Defense Starfighter
 DP20 Gunship
