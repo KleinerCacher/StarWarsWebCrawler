@@ -92,6 +92,9 @@ namespace WebCrawler
                 case "PTL":
                     weapon = Weapon.GetWeapon(Weapon.WeaponType.ProtonTorpedoLauncher);
                     break;
+                case "PBB":
+                    weapon = Weapon.GetWeapon(Weapon.WeaponType.ProtonBombBay);
+                    break;
                 default:
                     throw new ArgumentException("Shortcut not available");
             }
@@ -109,6 +112,7 @@ namespace WebCrawler
             const string forward = "Forward";
             const string aft = "Aft";
             const string all = "All";
+            const string down = "Down";
             const string portAndStarboard = "Port and Starbord";
             const string portOrStarboardOrForwardOrAft = "Port or Starbord or Forward or Aft";
             const string descHardpoint = "Hardpoint";
@@ -119,6 +123,9 @@ namespace WebCrawler
             const string descPortAndStarboardTurret = "Port and Starbord Turret";
             const string descRetractablePortAndStarboardTurret = "Retractable Port and Starbord Turret";
             const string descRetractablePortStarboardForwardAftTurret = "Retractable Port, Starbord, Forward and Aft Turret";
+            const string descTDorsal = "Dorsal Turret";
+            const string descVentral = "Ventral";
+            const string descTVentral = "Ventral Turret";
             const string descDorsalAndVentral = "Dorsal and Ventral Turret";
 
             int numberOfWeapons = -1;
@@ -169,6 +176,18 @@ namespace WebCrawler
                     fireArc = forward;
                     description = descPortAndStarbordWing;
                     break;
+                case "TDO":
+                    fireArc = all;
+                    description = descTDorsal;
+                    break;
+                case "VEN":
+                    fireArc = down;
+                    description = descVentral;
+                    break;
+                case "TVEN":
+                    fireArc = all;
+                    description = descTVentral;
+                    break;
                 case "TDOVEN":
                     fireArc = all;
                     description = descDorsalAndVentral;
@@ -211,6 +230,9 @@ namespace WebCrawler
                 {
                     case 2:
                         numberOfLinkedWeaponsString += " twin";
+                        break;
+                    case 3:
+                        numberOfLinkedWeaponsString += " triple";
                         break;
                     default:
                         throw new ArgumentException("Number Of Linked Weapons Not Available");
