@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 namespace WebCrawler
 {
@@ -103,24 +104,30 @@ namespace WebCrawler
         private static void FillInWeaponMount(Weapon weapon, string mountShortCut)
         {
             var unitsMap = new[] { "Zero", "One", "Two", "Three", "Four",
-                "Five", "Six", "Seven", "Eight", "Nine", "Ten"};
+                "Five", "Six", "Seven", "Eight", "Nine"};
 
             const string forward = "Forward";
+            const string aft = "Aft";
             const string all = "All";
             const string portAndStarboard = "Port and Starbord";
+            const string portOrStarboardOrForwardOrAft = "Port or Starbord or Forward or Aft";
             const string descHardpoint = "Hardpoint";
             const string descRetractableForward = "Retractable forward";
             const string descTurretAll = "Turret";
             const string descTurretForward = "Forward, Port and Starbord";
             const string descPortAndStarbordWing = "Port and Starbord wing";
             const string descPortAndStarboardTurret = "Port and Starbord Turret";
+            const string descRetractablePortAndStarboardTurret = "Retractable Port and Starbord Turret";
+            const string descRetractablePortStarboardForwardAftTurret = "Retractable Port, Starbord, Forward and Aft Turret";
             const string descDorsalAndVentral = "Dorsal and Ventral Turret";
 
             int numberOfWeapons = -1;
             if (Char.IsDigit(mountShortCut[0]))
             {
-                numberOfWeapons = int.Parse(mountShortCut[0].ToString());
-                mountShortCut = mountShortCut.Substring(1);
+                var number = Regex.Match(mountShortCut, @"([0-9]+)[a-zA-Z]").Groups[1].Value;
+                mountShortCut = Regex.Match(mountShortCut, @"[0-9]+(.*)").Groups[1].Value;
+
+                numberOfWeapons = int.Parse(number.ToString());
             }
 
             int numberOfLinkedWeapons = -1;
@@ -137,6 +144,10 @@ namespace WebCrawler
                 case "FO":
                     fireArc = forward;
                     description = forward;
+                    break;
+                case "AF":
+                    fireArc = aft;
+                    description = aft;
                     break;
                 case "REFO":
                     fireArc = forward;
@@ -166,6 +177,14 @@ namespace WebCrawler
                     fireArc = portAndStarboard;
                     description = descPortAndStarboardTurret;
                     break;
+                case "TREPOSTSI":
+                    fireArc = portAndStarboard;
+                    description = descRetractablePortAndStarboardTurret;
+                    break;
+                case "TREPOSTFOAF":
+                    fireArc = portOrStarboardOrForwardOrAft;
+                    description = descRetractablePortStarboardForwardAftTurret;
+                    break;
                 default:
                     throw new ArgumentException("Fire Arc Shortcut not availaible");
             }
@@ -173,7 +192,7 @@ namespace WebCrawler
             string numberOfWeaponsString = string.Empty;
             if (numberOfWeapons != -1)
             {
-                if (numberOfWeapons > unitsMap.Length)
+                if (numberOfWeapons > unitsMap.Length - 1)
                 {
                     numberOfWeaponsString = numberOfWeapons + " ";
                 }

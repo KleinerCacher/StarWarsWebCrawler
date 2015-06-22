@@ -21,13 +21,12 @@ CorelliSpace Gymsnor-4 Light Freighter#Tall;lcm
 CR90 Corvette#TDoven2;tlm;lin1#2TPOSTSI;tll
 CR92A Assassin-Class Corvette#3TPOSTSI2;tlm;lin1#TDoven;QLC#Fo;ptl#Fo;tbm
 CSS-1 Corellian Star Shuttle#
-D-Type Stealth Freighter
-Delta-6 System Defense Starfighter
-DP20 Gunship
-Dreadnought-Class Heavy Cruiser
-E-7 E-Wing Multi-Role Starfighter
-EF76 Nebulon-B Escort Frigate
-Escape Pod
+D-Type Stealth Freighter#
+DP20 Gunship#8Tall2;TLL;-Bre,Bre4,Lin1#Tall;QLC#2TPOSTSI;CM
+Dreadnought-Class Heavy Cruiser#4Fo;TLM;Lin1#5Af;TLM;Lin1#10TPOSTSI;QLC#5TPOSTSI;lch
+E-7 E-Wing Multi-Role Starfighter#Fo;lcm;lin2#Fo;ptl;lin1
+EF76 Nebulon-B Escort Frigate#6TREPOSTSI;TLM#6TREPOSTFOAF;lcl#3Fo;tbh
+Escape Pod#
 Firespray-31 System Patrol Craft
 GAT-12H Skipray Blastboat
 Ghtroc 720 Light Freighter
@@ -194,3 +193,4 @@ V-35 Courier Landspeeder
 V5 Medium Cargo Floater
 X-34 Landspeeder
 Zephyr-G Swoop
+Delta-6 System Defense Starfighter
