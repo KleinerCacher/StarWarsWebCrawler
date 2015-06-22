@@ -52,7 +52,7 @@ ISO-One#tDoven2;lcm;lin1#TPOST2;lcm;lin1
 J-Type Star Skiff#2TreDo2;lcm;lin1
 JM-5000 Jumpmaster Long Range Scout#Fo;lcl
 Kappa-Class Shuttle#tdoven2;bcl#2Fo;ab;lin1
-Keldabe-Class Battleship#5Tdo;tlh#10tpost;tlh#ven;ich#5post;ich#2Fo;mdm#5Fo;tbh
+Keldabe-Class Battleship#5Tdo;tlh#10tpost;tlh#5postven;ich#2Fo;mdm#5Fo;tbh
 LAF-250 Starfighter#Fo2;lcl;lin1
 Lambda-Class T-4A Long Range Shuttle#Fo;bcl;lin1#Fo2;lcl;lin1#ReAf2;bcl;lin1
 Lancer-Class Frigate#4Fo;qlc#4tDOVEN;qlc#4tpost;qlc
@@ -60,7 +60,7 @@ Life Boat#
 Loronar E-9 Explorer-Class Armed Long-Range Scout Vessel#tdoven;lcm;lin1
 Luxurious-class Yacht#
 MandalMotors M22-T Krayt Gunship#Tdo2;lch;lin1#Fo3;icm;lin2#Fo;cm;-lim;lim16
-MandalMotors M3-A Scyk Interceptor#Fo2;lcl;lin1#Other;Can have twin light ion cannon, Proton torpdo launcher oder concussion missle in forward slot
+MandalMotors M3-A Scyk Interceptor#Fo2;lcl;lin1#Other;Can have twin light ion cannon, Proton torpdo launcher or concussion missle in forward slot
 Marauder-Class Assault Corvette
 MC80 Liberty Type Star Cruiser
 Mobquet Medium Transport

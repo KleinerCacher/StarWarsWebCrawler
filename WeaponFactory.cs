@@ -141,6 +141,7 @@ namespace WebCrawler
             const string descPortAndStarbordWing = "Port and Starbord wing";
             const string descPortStarboardForward = "Port, starbord and forward";
             const string descPortAndStarboard = "Port and Starbord";
+            const string descVentralPortAndStarboard = "Ventral, Port and Starbord";
             const string descPortAndStarboardTurret = "Port and Starbord Turret";
             const string descRetractablePortAndStarboardTurret = "Retractable Port and Starbord Turret";
             const string descRetractablePortStarboardForwardAftTurret = "Retractable Port, Starbord, Forward and Aft Turret";
@@ -225,6 +226,10 @@ namespace WebCrawler
                 case "POST":
                     fireArc = portAndStarboard;
                     description = descPortAndStarboard;
+                    break;
+                case "POSTVEN":
+                    fireArc = all;
+                    description = descVentralPortAndStarboard;
                     break;
                 case "TPOST":
                     fireArc = portAndStarboard;
