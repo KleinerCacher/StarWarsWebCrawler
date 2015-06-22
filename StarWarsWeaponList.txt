@@ -7,7 +7,7 @@ Alpha-3 Nimbus 'V-Wing' Interceptor#PoStWinFo2;lcl;lin3#Fo;CM
 Alpha-class XG-1 'Star Wing' Assault Gunboat#Fo;lcm;Lin1#Fo;icl;lin1#Fo;CM
 Armos Modular Transport#
 Baudo-class Star Yacht#TAll;lcm
-Blockade Bandit#TDoVen2;TLM;lin1#2TPoStSi;TLL
+Blockade Bandit#TDoVen2;TLM;lin1#2TPOST;TLL
 Bloodblade#Fo;AB#Fo;TBl
 BTL-A4 Y-Wing Attack Starfighter#TFo2;icl;Lin1#Fo;lcm;Lin1#Fo;ptl
 BTL-S3 Y-Wing Attack Starfighter#TAll2;icl;Lin1#Fo;lcm;Lin1#Fo;ptl
@@ -18,19 +18,19 @@ Cloakshape Fighter#Fo;lcl;Lin1#Fo;cm
 Consular-Class Light Assault Cruiser#Tfo2;ich#2TDoven2;Tll;Lin1
 CorelliSpace Gymsnor-3 Light Freighter#Tall;lcm
 CorelliSpace Gymsnor-4 Light Freighter#Tall;lcm
-CR90 Corvette#TDoven2;tlm;lin1#2TPOSTSI;tll
-CR92A Assassin-Class Corvette#3TPOSTSI2;tlm;lin1#TDoven;QLC#Fo;ptl#Fo;tbm
+CR90 Corvette#TDoven2;tlm;lin1#2TPOST;tll
+CR92A Assassin-Class Corvette#3TPOST2;tlm;lin1#TDoven;QLC#Fo;ptl#Fo;tbm
 CSS-1 Corellian Star Shuttle#
 D-Type Stealth Freighter#
-DP20 Gunship#8Tall2;TLL;-Bre,Bre4,Lin1#Tall;QLC#2TPOSTSI;CM
-Dreadnought-Class Heavy Cruiser#4Fo;TLM;Lin1#5Af;TLM;Lin1#10TPOSTSI;QLC#5TPOSTSI;lch
+DP20 Gunship#8Tall2;TLL;-Bre,Bre4,Lin1#Tall;QLC#2TPOST;CM
+Dreadnought-Class Heavy Cruiser#4Fo;TLM;Lin1#5Af;TLM;Lin1#10TPOST;QLC#5TPOST;lch
 E-7 E-Wing Multi-Role Starfighter#Fo;lcm;lin2#Fo;ptl;lin1
 EF76 Nebulon-B Escort Frigate#6TREPOSTSI;TLM#6TREPOSTFOAF;lcl#3Fo;tbh
 Escape Pod#
 Firespray-31 System Patrol Craft#Fo;AB;#Fo;icl
 GAT-12H Skipray Blastboat#Fo3;icl;lin2#Tdo2;lcm;lin1#Fo;ptl#Fo;cm
 Ghtroc 720 Light Freighter#Tdo2;lcl;lin1
-Golan I Space Defense Platform#14TPOSTSI;tlm#3Tdo;ptl#2TVen;ptl#3TREPOSTFOAF;tbh
+Golan I Space Defense Platform#14TPOST;tlm#3Tdo;ptl#2TVen;ptl#3TREPOSTFOAF;tbh
 Gozanti-Class Armed Transport#TREPOSTSI;QLC#Fo;ptl
 GR-75 Medium Transport#
 GX1 Short Hauler#Tdo;lch
@@ -40,27 +40,27 @@ HLAF-500 Starfighter#Fo2;lcl;lin1#Fo2;ptl;lin1
 HT-2200 Medium Freighter#TDOVEN;lcm
 HWK-1000 Light Freighter#
 HWK-290 Light Freighter#
-ILH-KK Citadel-Class Light Freighter
-Imperial Customs Frigate
-Imperial I-Class Star Destroyer
-Imperial System Patrol Craft IPV-1
-Incom A-24 Sleuth-Class Scout Ship
-Incom A-36 Pathfinder-Class Force Reconnaissance Vessel
-Indulgent-Class Luxury Starliner
-Interdictor-Class Heavy Cruiser
-ISO-One
-J-Type Star Skiff
-JM-5000 Jumpmaster Long Range Scout
-Kappa-Class Shuttle
-Keldabe-Class Battleship
-LAF-250 Starfighter
-Lambda-Class T-4A Long Range Shuttle
-Lancer-Class Frigate
-Life Boat
-Loronar E-9 Explorer-Class Armed Long-Range Scout Vessel
-Luxurious-class Yacht
-MandalMotors M22-T Krayt Gunship
-MandalMotors M3-A Scyk Interceptor
+ILH-KK Citadel-Class Light Freighter#Fo;lcm#TPOST2;icl;lin1#Fo;cm#Fo;tbm
+Imperial Customs Frigate#2Fo;ich#2Af;ich#post;ich#Fo;tbl
+Imperial I-Class Star Destroyer#10TPOST;tlh;lin1#10TDo;tlh;lin1#POSTFO;tll#TPOST;icb;lin1#15post;icm#POSTFO;tbh
+Imperial System Patrol Craft IPV-1#TDOVEN;tlh;lin1#TPOST;tlh;lin1#Fo;cm
+Incom A-24 Sleuth-Class Scout Ship#Fo;lcl;lin1
+Incom A-36 Pathfinder-Class Force Reconnaissance Vessel#Fo;lcl;lin1#Tdo;icl#fo;cm
+Indulgent-Class Luxury Starliner#TDOVEN2;ich;lin1
+Interdictor-Class Heavy Cruiser#5tDoven;qlc#4post;qlc#2af;qlc
+ISO-One#tDoven2;lcm;lin1#TPOST2;lcm;lin1
+J-Type Star Skiff#2TreDo2;lcm;lin1
+JM-5000 Jumpmaster Long Range Scout#Fo;lcl
+Kappa-Class Shuttle#tdoven2;bcl#2Fo;ab;lin1
+Keldabe-Class Battleship#5Tdo;tlh#10tpost;tlh#ven;ich#5post;ich#2Fo;mdm#5Fo;tbh
+LAF-250 Starfighter#Fo2;lcl;lin1
+Lambda-Class T-4A Long Range Shuttle#Fo;bcl;lin1#Fo2;lcl;lin1#ReAf2;bcl;lin1
+Lancer-Class Frigate#4Fo;qlc#4tDOVEN;qlc#4tpost;qlc
+Life Boat#
+Loronar E-9 Explorer-Class Armed Long-Range Scout Vessel#tdoven;lcm;lin1
+Luxurious-class Yacht#
+MandalMotors M22-T Krayt Gunship#Tdo2;lch;lin1#Fo3;icm;lin2#Fo;cm;-lim;lim16
+MandalMotors M3-A Scyk Interceptor#Fo2;lcl;lin1#Other;Can have twin light ion cannon, Proton torpdo launcher oder concussion missle in forward slot
 Marauder-Class Assault Corvette
 MC80 Liberty Type Star Cruiser
 Mobquet Medium Transport

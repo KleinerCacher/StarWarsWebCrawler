@@ -13,6 +13,12 @@ namespace WebCrawler
             }
             else
             {
+                // Used when text should be displayed
+                if (weaponStats[0].ToUpper().Equals("OTHER"))
+                {
+                    return WeaponFactory.CreateOtherText(weaponStats);
+                }
+
                 return CreateWeapon(weaponStats[0], weaponStats[1]);
             }
         }
@@ -57,7 +63,10 @@ namespace WebCrawler
                     weapon = Weapon.GetWeapon(Weapon.WeaponType.IonCannonMedium);
                     break;
                 case "ICH":
-                    weapon = Weapon.GetWeapon(Weapon.WeaponType.LaserCannonHeavy);
+                    weapon = Weapon.GetWeapon(Weapon.WeaponType.IonCannonHeavy);
+                    break;
+                case "ICB":
+                    weapon = Weapon.GetWeapon(Weapon.WeaponType.IonCannonBattleship);
                     break;
                 case "LCL":
                     weapon = Weapon.GetWeapon(Weapon.WeaponType.LaserCannonLight);
@@ -95,6 +104,9 @@ namespace WebCrawler
                 case "PBB":
                     weapon = Weapon.GetWeapon(Weapon.WeaponType.ProtonBombBay);
                     break;
+                case "MDM":
+                    weapon = Weapon.GetWeapon(Weapon.WeaponType.MassDriverMissle);
+                    break;
                 default:
                     throw new ArgumentException("Shortcut not available");
             }
@@ -102,6 +114,11 @@ namespace WebCrawler
             FillInWeaponMount(weapon, mountShortCut);
 
             return weapon;
+        }
+
+        internal static Weapon CreateOtherText(string[] weaponStats)
+        {
+            return new WeaponText(weaponStats[1], Weapon.WeaponType.OtherTextInName);
         }
 
         private static void FillInWeaponMount(Weapon weapon, string mountShortCut)
@@ -114,16 +131,21 @@ namespace WebCrawler
             const string all = "All";
             const string down = "Down";
             const string portAndStarboard = "Port and Starbord";
+            const string portStarboardForward = "Port, Starbord or Forward";
             const string portOrStarboardOrForwardOrAft = "Port or Starbord or Forward or Aft";
             const string descHardpoint = "Hardpoint";
             const string descRetractableForward = "Retractable forward";
+            const string descRetractableAft = "Retractable Aft";
             const string descTurretAll = "Turret";
             const string descTurretForward = "Forward, Port and Starbord";
             const string descPortAndStarbordWing = "Port and Starbord wing";
+            const string descPortStarboardForward = "Port, starbord and forward";
+            const string descPortAndStarboard = "Port and Starbord";
             const string descPortAndStarboardTurret = "Port and Starbord Turret";
             const string descRetractablePortAndStarboardTurret = "Retractable Port and Starbord Turret";
             const string descRetractablePortStarboardForwardAftTurret = "Retractable Port, Starbord, Forward and Aft Turret";
             const string descTDorsal = "Dorsal Turret";
+            const string descTRetractableDorsal = "Retractable dorsal turret";
             const string descVentral = "Ventral";
             const string descTVentral = "Ventral Turret";
             const string descDorsalAndVentral = "Dorsal and Ventral Turret";
@@ -152,13 +174,17 @@ namespace WebCrawler
                     fireArc = forward;
                     description = forward;
                     break;
+                case "REFO":
+                    fireArc = forward;
+                    description = descRetractableForward;
+                    break;
                 case "AF":
                     fireArc = aft;
                     description = aft;
                     break;
-                case "REFO":
-                    fireArc = forward;
-                    description = descRetractableForward;
+                case "REAF":
+                    fireArc = aft;
+                    description = descRetractableAft;
                     break;
                 case "TFO":
                     fireArc = forward;
@@ -180,6 +206,10 @@ namespace WebCrawler
                     fireArc = all;
                     description = descTDorsal;
                     break;
+                case "TREDO":
+                    fireArc = all;
+                    description = descTRetractableDorsal;
+                    break;
                 case "VEN":
                     fireArc = down;
                     description = descVentral;
@@ -192,9 +222,17 @@ namespace WebCrawler
                     fireArc = all;
                     description = descDorsalAndVentral;
                     break;
-                case "TPOSTSI":
+                case "POST":
+                    fireArc = portAndStarboard;
+                    description = descPortAndStarboard;
+                    break;
+                case "TPOST":
                     fireArc = portAndStarboard;
                     description = descPortAndStarboardTurret;
+                    break;
+                case "POSTFO":
+                    fireArc = portStarboardForward;
+                    description = descPortStarboardForward;
                     break;
                 case "TREPOSTSI":
                     fireArc = portAndStarboard;

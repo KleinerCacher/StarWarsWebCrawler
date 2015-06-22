@@ -54,6 +54,9 @@ namespace WebCrawler
                 case "ACC":
                     quality = new WeaponQuality("Accurate");
                     break;
+                case "INACC":
+                    quality = new WeaponQuality("Inaccurate");
+                    break;
                 case "LIN":
                     quality = new WeaponQuality("Linked");
                     break;

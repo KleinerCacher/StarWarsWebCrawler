@@ -66,6 +66,7 @@
     <Compile Include="WeaponFactory.cs" />
     <Compile Include="WeaponQuality.cs" />
     <Compile Include="Weapon.cs" />
+    <Compile Include="WeaponText.cs" />
     <Compile Include="Webcrawler.cs" />
   </ItemGroup>
   <ItemGroup>

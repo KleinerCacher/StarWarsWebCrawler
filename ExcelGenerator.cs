@@ -89,7 +89,8 @@ namespace WebCrawler
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < list.Count; i++)
             {
-                sb.Append(GetWeaponText(list[i]));
+                Weapon weapon = list[i];
+                sb.Append(weapon.GetWeaponText());
 
                 if (i != list.Count - 1)
                 {
@@ -99,45 +100,6 @@ namespace WebCrawler
             }
 
             return sb.ToString();
-        }
-
-        private static string GetWeaponText(Weapon weapon)
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.AppendFormat("{0} Range ", weapon.Range);
-            sb.AppendFormat("({0} {1})", weapon.FireArcDescription, weapon.Name);
-            sb.AppendLine();
-            sb.AppendFormat("Fire Arc {0}; Damage {1}, Critical Hit {2}",
-                                weapon.FireArc, weapon.Damage, weapon.Criticalhit);
-
-            if (weapon.WeaponQualities.Count > 0)
-            {
-                sb.Append("; ");
-            }
-
-            for (int i = 0; i < weapon.WeaponQualities.Count; i++)
-            {
-                sb.Append(GetWeaponQualityText(weapon.WeaponQualities[i]));
-
-                if (i != weapon.WeaponQualities.Count - 1)
-                {
-                    sb.Append(", ");
-                }
-            }
-
-            return sb.ToString();
-        }
-
-        private static string GetWeaponQualityText(WeaponQuality quality)
-        {
-            if (quality.Value == 0)
-            {
-                return quality.Name;
-            }
-            else
-            {
-                return quality.Name + " " + quality.Value;
-            }
         }
     }
 }

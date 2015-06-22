@@ -7,7 +7,7 @@ namespace WebCrawler
 {
     public class TransportationWeaponMapping
     {
-        private static readonly Lazy<TransportationWeaponMapping> lazy 
+        private static readonly Lazy<TransportationWeaponMapping> lazy
             = new Lazy<TransportationWeaponMapping>(() => new TransportationWeaponMapping());
 
         private const string fileName = "StarWarsWeaponList.txt";
