@@ -55,6 +55,7 @@
     <Compile Include="AllIndexData.cs" />
     <Compile Include="ExcelGenerator.cs" />
     <Compile Include="IndexData.cs" />
+    <Compile Include="Mount.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SpaceShip.cs" />

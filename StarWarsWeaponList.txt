@@ -23,7 +23,7 @@ CR92A Assassin-Class Corvette#3TPOST2;tlm;lin1#TDoven;QLC#Fo;ptl#Fo;tbm
 CSS-1 Corellian Star Shuttle#
 D-Type Stealth Freighter#
 DP20 Gunship#8Tall2;TLL;-Bre,Bre4,Lin1#Tall;QLC#2TPOST;CM
-Dreadnought-Class Heavy Cruiser#4Fo;TLM;Lin1#5Af;TLM;Lin1#10TPOST;QLC#5TPOST;lch
+Dreadnought-Class Heavy Cruiser#4Fo,5Af;TLM;Lin1#10TPOST;QLC#5TPOST;lch
 E-7 E-Wing Multi-Role Starfighter#Fo;lcm;lin2#Fo;ptl;lin1
 EF76 Nebulon-B Escort Frigate#6TREPOSTSI;TLM#6TREPOSTFOAF;lcl#3Fo;tbh
 Escape Pod#
@@ -41,21 +41,21 @@ HT-2200 Medium Freighter#TDOVEN;lcm
 HWK-1000 Light Freighter#
 HWK-290 Light Freighter#
 ILH-KK Citadel-Class Light Freighter#Fo;lcm#TPOST2;icl;lin1#Fo;cm#Fo;tbm
-Imperial Customs Frigate#2Fo;ich#2Af;ich#post;ich#Fo;tbl
-Imperial I-Class Star Destroyer#10TPOST;tlh;lin1#10TDo;tlh;lin1#POSTFO;tll#TPOST;icb;lin1#15post;icm#POSTFO;tbh
-Imperial System Patrol Craft IPV-1#TDOVEN;tlh;lin1#TPOST;tlh;lin1#Fo;cm
+Imperial Customs Frigate#2FoAf,1Post;ich#Fo;tbl
+Imperial I-Class Star Destroyer#10TPOSTDO;tlh;lin1#POSTFO;tll#TPOST;icb;lin1#15post;icm#POSTFO;tbh
+Imperial System Patrol Craft IPV-1#TDOVENPOST;tlh;lin1#Fo;cm
 Incom A-24 Sleuth-Class Scout Ship#Fo;lcl;lin1
 Incom A-36 Pathfinder-Class Force Reconnaissance Vessel#Fo;lcl;lin1#Tdo;icl#fo;cm
 Indulgent-Class Luxury Starliner#TDOVEN2;ich;lin1
-Interdictor-Class Heavy Cruiser#5tDoven;qlc#4post;qlc#2af;qlc
+Interdictor-Class Heavy Cruiser#5tDoven,4post,2af;qlc
 ISO-One#tDoven2;lcm;lin1#TPOST2;lcm;lin1
 J-Type Star Skiff#2TreDo2;lcm;lin1
 JM-5000 Jumpmaster Long Range Scout#Fo;lcl
 Kappa-Class Shuttle#tdoven2;bcl#2Fo;ab;lin1
-Keldabe-Class Battleship#5Tdo;tlh#10tpost;tlh#5postven;ich#2Fo;mdm#5Fo;tbh
+Keldabe-Class Battleship#5Tdo,10tpost;tlh#5postven;ich#2Fo;mdm#5Fo;tbh
 LAF-250 Starfighter#Fo2;lcl;lin1
-Lambda-Class T-4A Long Range Shuttle#Fo;bcl;lin1#Fo2;lcl;lin1#ReAf2;bcl;lin1
-Lancer-Class Frigate#4Fo;qlc#4tDOVEN;qlc#4tpost;qlc
+Lambda-Class T-4A Long Range Shuttle#Fo,ReAf2;bcl;lin1#Fo2;lcl;lin1
+Lancer-Class Frigate#4tDOVENpostFo;qlc
 Life Boat#
 Loronar E-9 Explorer-Class Armed Long-Range Scout Vessel#tdoven;lcm;lin1
 Luxurious-class Yacht#
