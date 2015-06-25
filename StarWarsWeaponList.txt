@@ -25,12 +25,12 @@ D-Type Stealth Freighter#
 DP20 Gunship#8Tall2;TLL;-Bre,Bre4,Lin1#Tall;QLC#2TPOST;CM
 Dreadnought-Class Heavy Cruiser#4Fo,5Af;TLM;Lin1#10TPOST;QLC#5TPOST;lch
 E-7 E-Wing Multi-Role Starfighter#Fo;lcm;lin2#Fo;ptl;lin1
-EF76 Nebulon-B Escort Frigate#6TREPOSTSI;TLM#6TREPOSTFOAF;lcl#3Fo;tbh
+EF76 Nebulon-B Escort Frigate#6TREPOSTSI;TLM#6TREPOSTFOAF;lcl#3Fo;tbh#Other;24 Starfighters
 Escape Pod#
 Firespray-31 System Patrol Craft#Fo;AB;#Fo;icl
 GAT-12H Skipray Blastboat#Fo3;icl;lin2#Tdo2;lcm;lin1#Fo;ptl#Fo;cm
 Ghtroc 720 Light Freighter#Tdo2;lcl;lin1
-Golan I Space Defense Platform#14TPOST;tlm#3Tdo;ptl#2TVen;ptl#3TREPOSTFOAF;tbh
+Golan I Space Defense Platform#14TPOST;tlm#3Tdo;ptl#2TVen;ptl#3TREPOSTFOAF;tbh#Other;Massive 4
 Gozanti-Class Armed Transport#TREPOSTSI;QLC#Fo;ptl
 GR-75 Medium Transport#
 GX1 Short Hauler#Tdo;lch
@@ -47,12 +47,12 @@ Imperial System Patrol Craft IPV-1#TDOVENPOST;tlh;lin1#Fo;cm
 Incom A-24 Sleuth-Class Scout Ship#Fo;lcl;lin1
 Incom A-36 Pathfinder-Class Force Reconnaissance Vessel#Fo;lcl;lin1#Tdo;icl#fo;cm
 Indulgent-Class Luxury Starliner#TDOVEN2;ich;lin1
-Interdictor-Class Heavy Cruiser#5tDoven,4post,2af;qlc
+Interdictor-Class Heavy Cruiser#5tDoven,4post,2af;qlc#Other;Massive 1
 ISO-One#tDoven2;lcm;lin1#TPOST2;lcm;lin1
 J-Type Star Skiff#2TreDo2;lcm;lin1
 JM-5000 Jumpmaster Long Range Scout#Fo;lcl
 Kappa-Class Shuttle#tdoven2;bcl#2Fo;ab;lin1
-Keldabe-Class Battleship#5Tdo,10tpost;tlh#5postven;ich#2Fo;mdm#5Fo;tbh
+Keldabe-Class Battleship#5Tdo,10tpost;tlh#5postven;ich#2Fo;mdm#5Fo;tbh#Other;36 Starfighter
 LAF-250 Starfighter#Fo2;lcl;lin1
 Lambda-Class T-4A Long Range Shuttle#Fo,ReAf2;bcl;lin1#Fo2;lcl;lin1
 Lancer-Class Frigate#4tDOVENpostFo;qlc
@@ -61,12 +61,12 @@ Loronar E-9 Explorer-Class Armed Long-Range Scout Vessel#tdoven;lcm;lin1
 Luxurious-class Yacht#
 MandalMotors M22-T Krayt Gunship#Tdo2;lch;lin1#Fo3;icm;lin2#Fo;cm;-lim;lim16
 MandalMotors M3-A Scyk Interceptor#Fo2;lcl;lin1#Other;Can have twin light ion cannon, Proton torpdo launcher or concussion missle in forward slot
-Marauder-Class Assault Corvette
-MC80 Liberty Type Star Cruiser
-Mobquet Medium Transport
-Modified Cloakshape Starfighter
-Modified TIE Bomber
-Nightflyer
+Marauder-Class Assault Corvette#4TFoALL2;tll;lin1#3Fo;tbl#other;12 Fighters, 2 Shuttles
+MC80 Liberty Type Star Cruiser#12FOAFPOST2;tlh;lin1#5FOAFPOST2;icb#6HU;tbh#Other;36 Starfighters, Numerous shuttles, landing craft, utility vehicles, Massive 2
+Mobquet Medium Transport#TREFOAF;lcm#Other;Or Retractale Fore + Aft Light Turbolasers
+Modified Cloakshape Starfighter#Fo;lcl;lin1#Fo;icl;lin1
+Modified TIE Bomber#Fo;lcl;lin1
+Nightflyer#TDOVEN2;lcm;lin1
 PB-950 Patrol Boat
 PPB Pocket Patrol Boat
 Praetor II-Class Star Battlecruiser

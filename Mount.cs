@@ -39,7 +39,8 @@ namespace WebCrawler
             Aft,
             HardPoint,
             Wing,
-            All
+            All,
+            Hull
         }
 
         public Mount(string mountShortcut)
@@ -82,6 +83,10 @@ namespace WebCrawler
                 {
                     sb.Append("Port and Starbord wing ");
                 }
+                else if (mount.otherFlags.Contains(MountFlags.Hull))
+                {
+                    sb.Append("Hull ");
+                }
                 else
                 {
                     for (int j = 0; j < mount.directionFlags.Count; j++)
@@ -117,7 +122,8 @@ namespace WebCrawler
             List<MountFlags> allOtherFlags = mounts.SelectMany(x => x.otherFlags).Distinct().ToList();
             List<MountFlags> allDirectionFlags = mounts.SelectMany(x => x.directionFlags).Distinct().ToList();
 
-            if (allOtherFlags.Contains(MountFlags.Turret) && allOtherFlags.Contains(MountFlags.All)
+            if (allOtherFlags.Contains(MountFlags.Hull)
+                ||allOtherFlags.Contains(MountFlags.Turret) && allOtherFlags.Contains(MountFlags.All)
                 || allOtherFlags.Contains(MountFlags.Turret) && allDirectionFlags.Contains(MountFlags.Dorsal)
                 || allOtherFlags.Contains(MountFlags.Turret) && allDirectionFlags.Contains(MountFlags.Ventral)
                 || (allDirectionFlags.Contains(MountFlags.Ventral)
@@ -141,7 +147,7 @@ namespace WebCrawler
                 for (int j = 0; j < allDirectionFlags.Count; j++)
                 {
                     sb.Append(Enum.GetName(typeof(MountFlags), allDirectionFlags[j]));
-                    string separatedString = j != allDirectionFlags.Count - 1 ? ", " : " ";
+                    string separatedString = j != allDirectionFlags.Count - 1 ? ", " : string.Empty;
                     sb.Append(separatedString);
                 }
 
@@ -192,7 +198,7 @@ namespace WebCrawler
                 directionFlags.Add(MountFlags.Ventral);
             }
 
-            if (mountShortcut.Contains("All"))
+            if (mountShortcut.Contains("ALL"))
             {
                 otherFlags.Add(MountFlags.All);
             }
@@ -205,6 +211,11 @@ namespace WebCrawler
             if (mountShortcut.Contains("WIN"))
             {
                 otherFlags.Add(MountFlags.Wing);
+            }
+
+            if (mountShortcut.Contains("HU"))
+            {
+                otherFlags.Add(MountFlags.Hull);
             }
         }
 
