@@ -67,10 +67,10 @@ Mobquet Medium Transport#TREFOAF;lcm#Other;Or Retractale Fore + Aft Light Turbol
 Modified Cloakshape Starfighter#Fo;lcl;lin1#Fo;icl;lin1
 Modified TIE Bomber#Fo;lcl;lin1
 Nightflyer#TDOVEN2;lcm;lin1
-PB-950 Patrol Boat
-PPB Pocket Patrol Boat
-Praetor II-Class Star Battlecruiser
-Preybird-Class Starfighter
+PB-950 Patrol Boat#TAF;qlc#TPOST;icm#FO;cm
+PPB Pocket Patrol Boat#TDO;lch
+Praetor II-Class Star Battlecruiser#30TPOST4;TLH#20TDOVEN;tlm#10FO2,15TPOST2;icb;lin1#10HU;tbh#Other;120 Starfighters,Numerous shuttles,landing craft,utility vehicles,landing barges,AT-series walkers, Massive 3
+Preybird-Class Starfighter#WI;lcm;lin1#1FOAF;cm
 Quasar Fire-class Escort Carrier
 R-41 Starchaser
 R60 'T-Wing' Interceptor

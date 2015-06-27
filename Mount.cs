@@ -81,7 +81,7 @@ namespace WebCrawler
                 }
                 else if (mount.otherFlags.Contains(MountFlags.Wing))
                 {
-                    sb.Append("Port and Starbord wing ");
+                    sb.Append("Wingtip ");
                 }
                 else if (mount.otherFlags.Contains(MountFlags.Hull))
                 {
@@ -140,6 +140,24 @@ namespace WebCrawler
                 && !allDirectionFlags.Contains(MountFlags.Dorsal))
             {
                 return "Down";
+            }
+            else if (allOtherFlags.Contains(MountFlags.Turret) && allDirectionFlags.Contains(MountFlags.Forward)
+                && !allDirectionFlags.Contains(MountFlags.Ventral)
+                && !allDirectionFlags.Contains(MountFlags.Aft)
+                && !allDirectionFlags.Contains(MountFlags.Port)
+                && !allDirectionFlags.Contains(MountFlags.Starbord)
+                && !allDirectionFlags.Contains(MountFlags.Dorsal))
+            {
+                return "Forward, Port, Starbord";
+            }
+            else if (allOtherFlags.Contains(MountFlags.Turret) && allDirectionFlags.Contains(MountFlags.Aft)
+               && !allDirectionFlags.Contains(MountFlags.Ventral)
+               && !allDirectionFlags.Contains(MountFlags.Forward)
+               && !allDirectionFlags.Contains(MountFlags.Port)
+               && !allDirectionFlags.Contains(MountFlags.Starbord)
+               && !allDirectionFlags.Contains(MountFlags.Dorsal))
+            {
+                return "Aft, Port, Starbord";
             }
             else
             {
