@@ -83,14 +83,14 @@ Selonian Coneship#
 Sentinel-Class Landing Craft#Fo2;lcl;lin1#reaf2;bcl;lin1#3REPOSTUFOAF;lcl#3FO;tbh
 Shadow Raptor#6TUREPOST;lcm
 Shuttle Pod#2FO;bcl;lin1
-SoroSuub Luxury 3000 Space Yacht#TUDOVEN2;lcl;lin1
-Space Master Medium Transport
-Star Galleon Armed Transport
-Starbolt Assault Carrier
-Starlight-class Light Freighter
-Starwind Pleasure Yacht
-Surronian Conqueror-Class Assault Ship
-Suwantek TL-1200 Transport
+SoroSuub Luxury 3000 Space Yacht#
+Space Master Medium Transport#TUDOVEN2;lcl;lin1
+Star Galleon Armed Transport#5POSTRE;tlm#FO;cm
+Starbolt Assault Carrier#2TUDO;tlh#2POST;tll#2TUVEn;ich#Fo2;ptl;lin1#Fo;tbh
+Starlight-class Light Freighter#TUALL;lcm
+Starwind Pleasure Yacht#TUDOVEN;lcm
+Surronian Conqueror-Class Assault Ship#TUDO2;lch;lin1#Fo2;icl;lin1
+Suwantek TL-1200 Transport#TUPOST;lcm
 T-65B 'X-Wing' Multi-Role Starfighter
 Tam Blackstar's TIE Hunter
 Temple-Class Heavy Freighter
