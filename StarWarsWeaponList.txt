@@ -91,22 +91,22 @@ Starlight-class Light Freighter#TUALL;lcm
 Starwind Pleasure Yacht#TUDOVEN;lcm
 Surronian Conqueror-Class Assault Ship#TUDO2;lch;lin1#Fo2;icl;lin1
 Suwantek TL-1200 Transport#TUPOST;lcm
-T-65B 'X-Wing' Multi-Role Starfighter
-Tam Blackstar's TIE Hunter
-Temple-Class Heavy Freighter
-The Deep Dark
-The Diligent
-The Eternal Wrath
-The Venture
-TIE/AG 'Aggressor' Starfighter
-TIE/D 'Defender' Multi-Role Starfighter
-TIE/HU 'Hunter' Multi-role Starfighter
-TIE/IN Interceptor
-TIE/IT Interdictor Starfighter
-TIE/LN Starfighter
-TIE/PH 'Phantom' Multi-role Stealth Starfighter
-TIE/SA Tactical Bomber
-Ton-Falk-class Escort Carrier
+T-65B 'X-Wing' Multi-Role Starfighter#Win;lcm;lin3#FO;ptl
+Tam Blackstar's TIE Hunter#TUALL2;icl;lin1#Fo;lcm#Fo;ptl
+Temple-Class Heavy Freighter#
+The Deep Dark#TUDOVEN2;lcm;lin1
+The Diligent#TuAF;qlc#TUPOST;icm#FO;cm
+The Eternal Wrath#5DOPOST;tlh#5TUVENPOST;icb#2TUFO;tbh;Other;Massive 2
+The Venture#FO;bcl;lin1#POST;bcl
+TIE/AG 'Aggressor' Starfighter#TUAF2;lcl;lin1#Fo;lcm;lin1
+TIE/D 'Defender' Multi-Role Starfighter#Win;lcm;lin3#FO2;icl;lin1#Fo;cm;lin1
+TIE/HU 'Hunter' Multi-role Starfighter#FO2;icl;lin1#Fo;lcm;lin1#FO;ptl;lin1
+TIE/IN Interceptor#Win;lcm;lin3
+TIE/IT Interdictor Starfighter#Fo;lcl;lin1#VEN;pbb;lin1;-lim;lim16#Fo;cm#Other;instead proton torpedo launcher
+TIE/LN Starfighter#Fo;lcm;lin1
+TIE/PH 'Phantom' Multi-role Stealth Starfighter#Fo;lcm;lin4#Other;Stygium Cloaking Device
+TIE/SA Tactical Bomber#Fo;lcl;lin1#VEN;pbb;lin1;-lim;lim16#Fo;cm;lin1#Other;instead proton torpedo launcher
+Ton-Falk-class Escort Carrier#5POST2;lcl;lin1#4Hu;tbm
 Ubrikkian Industries Kossak-Class Frigate
 Ubrikkian Industries Modified Minstrel-Class Space Yacht
 Ubrikkian Industries Seltiss-2 Caravel

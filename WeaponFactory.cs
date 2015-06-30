@@ -107,6 +107,9 @@ namespace WebCrawler
                 case "MDM":
                     weapon = Weapon.GetWeapon(Weapon.WeaponType.MassDriverMissle);
                     break;
+                case "VLW":
+                    weapon = Weapon.GetWeapon(Weapon.WeaponType.VlWarhead);
+                    break;
                 default:
                     throw new ArgumentException("Shortcut not available");
             }
