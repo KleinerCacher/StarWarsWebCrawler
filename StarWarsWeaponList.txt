@@ -6,84 +6,84 @@ Action VI Bulk Transport#
 Alpha-3 Nimbus 'V-Wing' Interceptor#PoStWinFo2;lcl;lin3#Fo;CM
 Alpha-class XG-1 'Star Wing' Assault Gunboat#Fo;lcm;Lin1#Fo;icl;lin1#Fo;CM
 Armos Modular Transport#
-Baudo-class Star Yacht#TAll;lcm
-Blockade Bandit#TDoVen2;TLM;lin1#2TPOST;TLL
+Baudo-class Star Yacht#TUAll;lcm
+Blockade Bandit#TUDoVen2;TLM;lin1#2TUPOST;TLL
 Bloodblade#Fo;AB#Fo;TBl
-BTL-A4 Y-Wing Attack Starfighter#TFo2;icl;Lin1#Fo;lcm;Lin1#Fo;ptl
-BTL-S3 Y-Wing Attack Starfighter#TAll2;icl;Lin1#Fo;lcm;Lin1#Fo;ptl
-BTS-A2 'H-Wing' Long-range Strike Starfighter#Tall;lcm#Fo2;icl;Lin1#Fo;ptl
+BTL-A4 Y-Wing Attack Starfighter#TUFo2;icl;Lin1#Fo;lcm;Lin1#Fo;ptl
+BTL-S3 Y-Wing Attack Starfighter#TUAll2;icl;Lin1#Fo;lcm;Lin1#Fo;ptl
+BTS-A2 'H-Wing' Long-range Strike Starfighter#TUall;lcm#Fo2;icl;Lin1#Fo;ptl
 CEC WUD-500 Star Yacht#Fo2;BCl;Lin1
 CL-1c Lancet Interceptor#Fo2;lcm;lin1
 Cloakshape Fighter#Fo;lcl;Lin1#Fo;cm
-Consular-Class Light Assault Cruiser#Tfo2;ich#2TDoven2;Tll;Lin1
-CorelliSpace Gymsnor-3 Light Freighter#Tall;lcm
-CorelliSpace Gymsnor-4 Light Freighter#Tall;lcm
-CR90 Corvette#TDoven2;tlm;lin1#2TPOST;tll
-CR92A Assassin-Class Corvette#3TPOST2;tlm;lin1#TDoven;QLC#Fo;ptl#Fo;tbm
+Consular-Class Light Assault Cruiser#TUfo2;ich#2TUDoven2;Tll;Lin1
+CorelliSpace Gymsnor-3 Light Freighter#TUall;lcm
+CorelliSpace Gymsnor-4 Light Freighter#TUall;lcm
+CR90 Corvette#TDoven2;tlm;lin1#2TUPOST;tll
+CR92A Assassin-Class Corvette#3TUPOST2;tlm;lin1#TUDoven;QLC#Fo;ptl#Fo;tbm
 CSS-1 Corellian Star Shuttle#
 D-Type Stealth Freighter#
-DP20 Gunship#8Tall2;TLL;-Bre,Bre4,Lin1#Tall;QLC#2TPOST;CM
-Dreadnought-Class Heavy Cruiser#4Fo,5Af;TLM;Lin1#10TPOST;QLC#5TPOST;lch
+DP20 Gunship#8TUall2;TLL;-Bre,Bre4,Lin1#TUall;QLC#2TUPOST;CM
+Dreadnought-Class Heavy Cruiser#4Fo,5Af;TLM;Lin1#10TUPOST;QLC#5TUPOST;lch
 E-7 E-Wing Multi-Role Starfighter#Fo;lcm;lin2#Fo;ptl;lin1
-EF76 Nebulon-B Escort Frigate#6TREPOSTSI;TLM#6TREPOSTFOAF;lcl#3Fo;tbh#Other;24 Starfighters
+EF76 Nebulon-B Escort Frigate#6TUREPOSTSI;TLM#6TUREPOSTFOAF;lcl#3Fo;tbh#Other;24 Starfighters
 Escape Pod#
 Firespray-31 System Patrol Craft#Fo;AB;#Fo;icl
-GAT-12H Skipray Blastboat#Fo3;icl;lin2#Tdo2;lcm;lin1#Fo;ptl#Fo;cm
-Ghtroc 720 Light Freighter#Tdo2;lcl;lin1
-Golan I Space Defense Platform#14TPOST;tlm#3Tdo;ptl#2TVen;ptl#3TREPOSTFOAF;tbh#Other;Massive 4
-Gozanti-Class Armed Transport#TREPOSTSI;QLC#Fo;ptl
+GAT-12H Skipray Blastboat#Fo3;icl;lin2#TUdo2;lcm;lin1#Fo;ptl#Fo;cm
+Ghtroc 720 Light Freighter#TUdo2;lcl;lin1
+Golan I Space Defense Platform#14TUPOST;tlm#3TUdo;ptl#2TUVen;ptl#3TUREPOSTFOAF;tbh#Other;Massive 4
+Gozanti-Class Armed Transport#TUREPOSTSI;QLC#Fo;ptl
 GR-75 Medium Transport#
-GX1 Short Hauler#Tdo;lch
+GX1 Short Hauler#TUdo;lch
 H-60 Tempest Heavy Bomber#Fo;lcm;lin3#Fo2;icl;lin1#Fo;ptl#Ven;pbb
 HH-87 Starhopper Starfighter#Fo2;lcl;lin1
 HLAF-500 Starfighter#Fo2;lcl;lin1#Fo2;ptl;lin1
-HT-2200 Medium Freighter#TDOVEN;lcm
+HT-2200 Medium Freighter#TUDOVEN;lcm
 HWK-1000 Light Freighter#
 HWK-290 Light Freighter#
-ILH-KK Citadel-Class Light Freighter#Fo;lcm#TPOST2;icl;lin1#Fo;cm#Fo;tbm
+ILH-KK Citadel-Class Light Freighter#Fo;lcm#TUPOST2;icl;lin1#Fo;cm#Fo;tbm
 Imperial Customs Frigate#2FoAf,1Post;ich#Fo;tbl
-Imperial I-Class Star Destroyer#10TPOSTDO;tlh;lin1#POSTFO;tll#TPOST;icb;lin1#15post;icm#POSTFO;tbh
-Imperial System Patrol Craft IPV-1#TDOVENPOST;tlh;lin1#Fo;cm
+Imperial I-Class Star Destroyer#10TUPOSTDO;tlh;lin1#POSTFO;tll#TUPOST;icb;lin1#15post;icm#POSTFO;tbh
+Imperial System Patrol Craft IPV-1#TUDOVENPOST;tlh;lin1#Fo;cm
 Incom A-24 Sleuth-Class Scout Ship#Fo;lcl;lin1
-Incom A-36 Pathfinder-Class Force Reconnaissance Vessel#Fo;lcl;lin1#Tdo;icl#fo;cm
-Indulgent-Class Luxury Starliner#TDOVEN2;ich;lin1
-Interdictor-Class Heavy Cruiser#5tDoven,4post,2af;qlc#Other;Massive 1
-ISO-One#tDoven2;lcm;lin1#TPOST2;lcm;lin1
-J-Type Star Skiff#2TreDo2;lcm;lin1
+Incom A-36 Pathfinder-Class Force Reconnaissance Vessel#Fo;lcl;lin1#TUdo;icl#fo;cm
+Indulgent-Class Luxury Starliner#TUDOVEN2;ich;lin1
+Interdictor-Class Heavy Cruiser#5TUDoven,4post,2af;qlc#Other;Massive 1
+ISO-One#tDoven2;lcm;lin1#TUPOST2;lcm;lin1
+J-Type Star Skiff#2TUreDo2;lcm;lin1
 JM-5000 Jumpmaster Long Range Scout#Fo;lcl
-Kappa-Class Shuttle#tdoven2;bcl#2Fo;ab;lin1
-Keldabe-Class Battleship#5Tdo,10tpost;tlh#5postven;ich#2Fo;mdm#5Fo;tbh#Other;36 Starfighter
+Kappa-Class Shuttle#TUdoven2;bcl#2Fo;ab;lin1
+Keldabe-Class Battleship#5TUdo,10TUpost;tlh#5postven;ich#2Fo;mdm#5Fo;tbh#Other;36 Starfighter
 LAF-250 Starfighter#Fo2;lcl;lin1
 Lambda-Class T-4A Long Range Shuttle#Fo,ReAf2;bcl;lin1#Fo2;lcl;lin1
-Lancer-Class Frigate#4tDOVENpostFo;qlc
+Lancer-Class Frigate#4TUDOVENpostFo;qlc
 Life Boat#
-Loronar E-9 Explorer-Class Armed Long-Range Scout Vessel#tdoven;lcm;lin1
+Loronar E-9 Explorer-Class Armed Long-Range Scout Vessel#TUdoven;lcm;lin1
 Luxurious-class Yacht#
-MandalMotors M22-T Krayt Gunship#Tdo2;lch;lin1#Fo3;icm;lin2#Fo;cm;-lim;lim16
+MandalMotors M22-T Krayt Gunship#TUdo2;lch;lin1#Fo3;icm;lin2#Fo;cm;-lim;lim16
 MandalMotors M3-A Scyk Interceptor#Fo2;lcl;lin1#Other;Can have twin light ion cannon, Proton torpdo launcher or concussion missle in forward slot
-Marauder-Class Assault Corvette#4TFoALL2;tll;lin1#3Fo;tbl#other;12 Fighters, 2 Shuttles
+Marauder-Class Assault Corvette#4TUFoALL2;tll;lin1#3Fo;tbl#other;12 Fighters, 2 Shuttles
 MC80 Liberty Type Star Cruiser#12FOAFPOST2;tlh;lin1#5FOAFPOST2;icb#6HU;tbh#Other;36 Starfighters, Numerous shuttles, landing craft, utility vehicles, Massive 2
-Mobquet Medium Transport#TREFOAF;lcm#Other;Or Retractale Fore + Aft Light Turbolasers
+Mobquet Medium Transport#TUREFOAF;lcm#Other;Or Retractale Fore + Aft Light Turbolasers
 Modified Cloakshape Starfighter#Fo;lcl;lin1#Fo;icl;lin1
 Modified TIE Bomber#Fo;lcl;lin1
-Nightflyer#TDOVEN2;lcm;lin1
-PB-950 Patrol Boat#TAF;qlc#TPOST;icm#FO;cm
-PPB Pocket Patrol Boat#TDO;lch
-Praetor II-Class Star Battlecruiser#30TPOST4;TLH#20TDOVEN;tlm#10FO2,15TPOST2;icb;lin1#10HU;tbh#Other;120 Starfighters,Numerous shuttles,landing craft,utility vehicles,landing barges,AT-series walkers, Massive 3
+Nightflyer#TUDOVEN2;lcm;lin1
+PB-950 Patrol Boat#TUAF;qlc#TUPOST;icm#FO;cm
+PPB Pocket Patrol Boat#TUDO;lch
+Praetor II-Class Star Battlecruiser#30TUPOST4;TLH#20TUDOVEN;tlm#10FO2,15TUPOST2;icb;lin1#10HU;tbh#Other;120 Starfighters,Numerous shuttles,landing craft,utility vehicles,landing barges,AT-series walkers, Massive 3
 Preybird-Class Starfighter#WI;lcm;lin1#1FOAF;cm
-Quasar Fire-class Escort Carrier
-R-41 Starchaser
-R60 'T-Wing' Interceptor
-Regulator-Class Patrol Vessel
-Rendili Stardrive Neutron Star-Class Bulk Cruiser
-RZ-1 'A-Wing' Light Interceptor
-S-Type Racing Sloop
-Secutor-class Battlecarrier
-Selonian Coneship
-Sentinel-Class Landing Craft
-Shadow Raptor
-Shuttle Pod
-SoroSuub Luxury 3000 Space Yacht
+Quasar Fire-class Escort Carrier#2FO;TLL#2HU;tbm#Other;Massive 1
+R-41 Starchaser#WI;lcl;lin1#Fo;icl#fo;cm
+R60 'T-Wing' Interceptor#Fo;lcl;lin1#FO;ptl
+Regulator-Class Patrol Vessel#Fo2;icl;lin1#TUDO;qlc
+Rendili Stardrive Neutron Star-Class Bulk Cruiser#10POST,4Fo;tlh#10POST,5DO;lch#2Fo;tbh#Other;Massive 1
+RZ-1 'A-Wing' Light Interceptor#Fo;lcl;lin1#Do;cm;lin1#Other;Special Equipment: See A-CRB
+S-Type Racing Sloop#
+Secutor-class Battlecarrier#5POST,5DO;tlh;lin1#5POSTUFO;tll#Other;Starfighter Compliment: 144 starfighters, Numerous shuttles, landing craft, utility vehicles, AT-series walkers, ground assault vehicles, Massive 2
+Selonian Coneship#
+Sentinel-Class Landing Craft#Fo2;lcl;lin1#reaf2;bcl;lin1#3REPOSTUFOAF;lcl#3FO;tbh
+Shadow Raptor#6TUREPOST;lcm
+Shuttle Pod#2FO;bcl;lin1
+SoroSuub Luxury 3000 Space Yacht#TUDOVEN2;lcl;lin1
 Space Master Medium Transport
 Star Galleon Armed Transport
 Starbolt Assault Carrier

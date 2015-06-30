@@ -176,7 +176,7 @@ namespace WebCrawler
         private void InitializeFlagsFromRemainingShortcut(string mountShortcut)
         {
             mountShortcut = mountShortcut.ToUpper();
-            if (mountShortcut.Contains("T"))
+            if (mountShortcut.Contains("TU"))
             {
                 otherFlags.Add( MountFlags.Turret);
             }
