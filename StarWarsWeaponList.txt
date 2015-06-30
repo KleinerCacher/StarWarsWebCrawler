@@ -107,16 +107,16 @@ TIE/LN Starfighter#Fo;lcm;lin1
 TIE/PH 'Phantom' Multi-role Stealth Starfighter#Fo;lcm;lin4#Other;Stygium Cloaking Device
 TIE/SA Tactical Bomber#Fo;lcl;lin1#VEN;pbb;lin1;-lim;lim16#Fo;cm;lin1#Other;instead proton torpedo launcher
 Ton-Falk-class Escort Carrier#5POST2;lcl;lin1#4Hu;tbm
-Ubrikkian Industries Kossak-Class Frigate
-Ubrikkian Industries Modified Minstrel-Class Space Yacht
-Ubrikkian Industries Seltiss-2 Caravel
-Victory-Class Star Destroyer
-Vigil-Class Corvette
-Vindicator-Class Heavy Cruiser
-VT-49 Decimator
-Wayfarer-Class Medium Freighter
-Xanter-Class Deep-Space Exploration Frigate
-Xiytiar-Class Heavy Transport
+Ubrikkian Industries Kossak-Class Frigate#6TUPOST;tlm#4POSTAFTU2;lcl#4FO2;icm;lin1#2FO;tbh
+Ubrikkian Industries Modified Minstrel-Class Space Yacht#3REPOST;tll#3POST;icm#Fo;tbh
+Ubrikkian Industries Seltiss-2 Caravel#TUREPOST;lcm
+Victory-Class Star Destroyer#5POST4;tll;lin3#10fo2;tlm#10Do2;tlm#20Fo;cm#10HU;tbh;Other;Massivw 1
+Vigil-Class Corvette#3TuDo2;tll;lin1#3TUDo2;lch;lin1#FO;tbm
+Vindicator-Class Heavy Cruiser#5DOPOST;tlm#5POST4;tll;lin3#6Fo;8POSTAF;lcl;acc1#FOPOST;tbh#Other;Massive 1
+VT-49 Decimator#TUDOVEN;qlc#2Fo;cm;lin1
+Wayfarer-Class Medium Freighter#FO3;lcl;lin3
+Xanter-Class Deep-Space Exploration Frigate#2Fo,3POST;lch#TUPOST2;tll;lin1#TUVEN2;ich
+Xiytiar-Class Heavy Transport#
 Y164 Slave Transport
 YG-4210 Light Freighter
 YG-4400 Light Freighter
