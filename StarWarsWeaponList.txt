@@ -112,7 +112,7 @@ Ubrikkian Industries Modified Minstrel-Class Space Yacht#3REPOST;tll#3POST;icm#F
 Ubrikkian Industries Seltiss-2 Caravel#TUREPOST;lcm
 Victory-Class Star Destroyer#5POST4;tll;lin3#10fo2;tlm#10Do2;tlm#20Fo;cm#10HU;tbh;Other;Massivw 1
 Vigil-Class Corvette#3TuDo2;tll;lin1#3TUDo2;lch;lin1#FO;tbm
-Vindicator-Class Heavy Cruiser#5DOPOST;tlm#5POST4;tll;lin3#6Fo;8POSTAF;lcl;acc1#FOPOST;tbh#Other;Massive 1
+Vindicator-Class Heavy Cruiser#5DOPOST;tlm#5POST4;tll;lin3#6Fo,8POSTAF;lcl;acc1#FOPOST;tbh#Other;Massive 1
 VT-49 Decimator#TUDOVEN;qlc#2Fo;cm;lin1
 Wayfarer-Class Medium Freighter#FO3;lcl;lin3
 Xanter-Class Deep-Space Exploration Frigate#2Fo,3POST;lch#TUPOST2;tll;lin1#TUVEN2;ich
