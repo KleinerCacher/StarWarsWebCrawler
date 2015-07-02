@@ -117,23 +117,23 @@ VT-49 Decimator#TUDOVEN;qlc#2Fo;cm;lin1
 Wayfarer-Class Medium Freighter#FO3;lcl;lin3
 Xanter-Class Deep-Space Exploration Frigate#2Fo,3POST;lch#TUPOST2;tll;lin1#TUVEN2;ich
 Xiytiar-Class Heavy Transport#
-Y164 Slave Transport
-YG-4210 Light Freighter
-YG-4400 Light Freighter
-YKL-37R Nova Courier
-YQ-400 Monitor-Class System Patrol Ship
-YT-1000 Light Freighter
-YT-1200 Light Freighter
-YT-1210 Light Freighter
-YT-1300 Light Freighter
-YT-1760 Small Transport
-YT-2000 Light Freighter
-YT-2400 Light Freighter
-YV-560 Light Freighter
-YV-929 Light Freighter
-YZ-775 Medium Transport
-Z-95-AF4 Headhunter
-Z-95-AF4-H 'Heavy-95' Multi-role Starfighter
+Y164 Slave Transport#DOVEN4;lcl;lin3
+YG-4210 Light Freighter#TuDo2;lcl;lin1
+YG-4400 Light Freighter#ad;cm
+YKL-37R Nova Courier#tudoven;lcm#foaf;cm
+YQ-400 Monitor-Class System Patrol Ship#tudo2;lcm;lin1#fo2;ich;lin1
+YT-1000 Light Freighter#tudo2;lcl;lin1
+YT-1200 Light Freighter#tuven2;lcl;lin1
+YT-1210 Light Freighter#tudo;lcm
+YT-1300 Light Freighter#tudoven;lcm
+YT-1760 Small Transport#tudo;lcl
+YT-2000 Light Freighter#tudoven2;lcm;lin1
+YT-2400 Light Freighter#tudoven2;lcm;lin1
+YV-560 Light Freighter#do2;lcm;lin1
+YV-929 Light Freighter#2Tufo3;bcl;lin2#Tufo2;icl;lin1#2Fo,af;cm;lin1
+YZ-775 Medium Transport#Tudo2;tll#2TuPOST;lcm#2Fo;ptl
+Z-95-AF4 Headhunter#win;lcl;lin1#Fo;cm;lin1
+Z-95-AF4-H 'Heavy-95' Multi-role Starfighter#win;lcl;lin1#Fo;cm;-lim,lim8,-sf
 1-L Imperial-Series Repulsor Tank
 A-11 Model III 'Burrower'
 A-19 'Iron Crawler' Armored Transport

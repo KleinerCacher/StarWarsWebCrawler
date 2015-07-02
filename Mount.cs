@@ -126,6 +126,8 @@ namespace WebCrawler
                 ||allOtherFlags.Contains(MountFlags.Turret) && allOtherFlags.Contains(MountFlags.All)
                 || allOtherFlags.Contains(MountFlags.Turret) && allDirectionFlags.Contains(MountFlags.Dorsal)
                 || allOtherFlags.Contains(MountFlags.Turret) && allDirectionFlags.Contains(MountFlags.Ventral)
+                || allDirectionFlags.Contains(MountFlags.Dorsal)
+                || allDirectionFlags.Contains(MountFlags.Ventral)
                 || (allDirectionFlags.Contains(MountFlags.Ventral)
                     && allDirectionFlags.Contains(MountFlags.Port)
                     && allDirectionFlags.Contains(MountFlags.Starbord)))
@@ -267,6 +269,9 @@ namespace WebCrawler
                         break;
                     case 3:
                         numberOfLinkedWeaponsString += " triple";
+                        break;
+                    case 4:
+                        numberOfLinkedWeaponsString += " quad";
                         break;
                     default:
                         throw new ArgumentException("Number Of Linked Weapons Not Available");
