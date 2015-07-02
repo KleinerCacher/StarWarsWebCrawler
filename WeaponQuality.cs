@@ -39,6 +39,12 @@ namespace WebCrawler
                 case "BRE":
                     quality = new WeaponQuality("Breach");
                     break;
+                case "DIS":
+                    quality = new WeaponQuality("Disorient");
+                    break;
+                case "STUN":
+                    quality = new WeaponQuality("Stun Damage");
+                    break;
                 case "GUI":
                     quality = new WeaponQuality("Guided");
                     break;

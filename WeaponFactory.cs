@@ -56,6 +56,9 @@ namespace WebCrawler
                 case "CM":
                     weapon = Weapon.GetWeapon(Weapon.WeaponType.ConcussionMissile);
                     break;
+                case "CGL":
+                    weapon = Weapon.GetWeapon(Weapon.WeaponType.ConcussionGrenadeLauncher);
+                    break;
                 case "ICL":
                     weapon = Weapon.GetWeapon(Weapon.WeaponType.IonCannonLight);
                     break;
@@ -79,6 +82,9 @@ namespace WebCrawler
                     break;
                 case "QLC":
                     weapon = Weapon.GetWeapon(Weapon.WeaponType.QuadLaserCannon);
+                    break;
+                case "SCL":
+                    weapon = Weapon.GetWeapon(Weapon.WeaponType.SupressionCannonLight);
                     break;
                 case "TBL":
                     weapon = Weapon.GetWeapon(Weapon.WeaponType.TractorBeamLight);

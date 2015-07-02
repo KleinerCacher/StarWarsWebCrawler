@@ -13,8 +13,8 @@ namespace WebCrawler
 
         private int numberOfWeapons = -1;
         private int numberOfLinkedWeapons = -1;
-        private List< MountFlags> directionFlags = new List<MountFlags>();
-        private List<MountFlags> otherFlags = new List<MountFlags>() ;
+        private List<MountFlags> directionFlags = new List<MountFlags>();
+        private List<MountFlags> otherFlags = new List<MountFlags>();
 
         public string NumberOfWeaponsText
         {
@@ -28,7 +28,7 @@ namespace WebCrawler
 
         [Flags]
         public enum MountFlags
-        {          
+        {
             Turret,
             Retractable,
             Dorsal,
@@ -40,7 +40,8 @@ namespace WebCrawler
             HardPoint,
             Wing,
             All,
-            Hull
+            Hull,
+            Top
         }
 
         public Mount(string mountShortcut)
@@ -87,6 +88,10 @@ namespace WebCrawler
                 {
                     sb.Append("Hull ");
                 }
+                else if (mount.otherFlags.Contains(MountFlags.Top))
+                {
+                    sb.Append("Top ");
+                }
                 else
                 {
                     for (int j = 0; j < mount.directionFlags.Count; j++)
@@ -102,7 +107,7 @@ namespace WebCrawler
                     sb.Append("Turret ");
                 }
 
-                if (i == mounts.Count - 1 )
+                if (i == mounts.Count - 1)
                 {
                     sb.Append("mounted");
                 }
@@ -110,7 +115,7 @@ namespace WebCrawler
                 {
                     sb.Append(", ");
                 }
-                
+
                 sb.Append(mount.GetTextFromNumberOfLinkedWeapons());
             }
 
@@ -123,18 +128,19 @@ namespace WebCrawler
             List<MountFlags> allDirectionFlags = mounts.SelectMany(x => x.directionFlags).Distinct().ToList();
 
             if (allOtherFlags.Contains(MountFlags.Hull)
-                ||allOtherFlags.Contains(MountFlags.Turret) && allOtherFlags.Contains(MountFlags.All)
+                || allOtherFlags.Contains(MountFlags.Turret) && allOtherFlags.Contains(MountFlags.All)
                 || allOtherFlags.Contains(MountFlags.Turret) && allDirectionFlags.Contains(MountFlags.Dorsal)
                 || allOtherFlags.Contains(MountFlags.Turret) && allDirectionFlags.Contains(MountFlags.Ventral)
                 || allDirectionFlags.Contains(MountFlags.Dorsal)
                 || allDirectionFlags.Contains(MountFlags.Ventral)
+                || allOtherFlags.Contains(MountFlags.Top)
                 || (allDirectionFlags.Contains(MountFlags.Ventral)
                     && allDirectionFlags.Contains(MountFlags.Port)
                     && allDirectionFlags.Contains(MountFlags.Starbord)))
             {
                 return "All";
             }
-            else if (allDirectionFlags.Contains(MountFlags.Ventral) 
+            else if (allDirectionFlags.Contains(MountFlags.Ventral)
                 && !allDirectionFlags.Contains(MountFlags.Forward)
                 && !allDirectionFlags.Contains(MountFlags.Aft)
                 && !allDirectionFlags.Contains(MountFlags.Port)
@@ -180,7 +186,7 @@ namespace WebCrawler
             mountShortcut = mountShortcut.ToUpper();
             if (mountShortcut.Contains("TU"))
             {
-                otherFlags.Add( MountFlags.Turret);
+                otherFlags.Add(MountFlags.Turret);
             }
 
             if (mountShortcut.Contains("RE"))
@@ -190,7 +196,7 @@ namespace WebCrawler
 
             if (mountShortcut.Contains("FO"))
             {
-                directionFlags.Add( MountFlags.Forward);
+                directionFlags.Add(MountFlags.Forward);
             }
 
             if (mountShortcut.Contains("AF"))
@@ -236,6 +242,11 @@ namespace WebCrawler
             if (mountShortcut.Contains("HU"))
             {
                 otherFlags.Add(MountFlags.Hull);
+            }
+
+            if (mountShortcut.Contains("TOP"))
+            {
+                otherFlags.Add(MountFlags.Top);
             }
         }
 

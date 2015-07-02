@@ -134,14 +134,14 @@ YV-929 Light Freighter#2Tufo3;bcl;lin2#Tufo2;icl;lin1#2Fo,af;cm;lin1
 YZ-775 Medium Transport#Tudo2;tll#2TuPOST;lcm#2Fo;ptl
 Z-95-AF4 Headhunter#win;lcl;lin1#Fo;cm;lin1
 Z-95-AF4-H 'Heavy-95' Multi-role Starfighter#win;lcl;lin1#Fo;cm;-lim,lim8,-sf
-1-L Imperial-Series Repulsor Tank
-A-11 Model III 'Burrower'
-A-19 'Iron Crawler' Armored Transport
-Airspeeder
-All Terrain Armored Transport
-All Terrain Personal Transport
-All Terrain Riot Control Transport
-All Terrain Scout Transport
+1-L Imperial-Series Repulsor Tank#tuall;bcl
+A-11 Model III 'Burrower'#Other;Beamdrill(Person Weapon Scale) Range:Some meters,Forward,Dam5,Crit3,Bre3,InAcc3
+A-19 'Iron Crawler' Armored Transport#Tudo;bch#fo;ab#top;cgl
+Airspeeder#
+All Terrain Armored Transport#fo;lch;lin1#fo2;bch;lin1
+All Terrain Personal Transport#Fo2;bcl;lin1#fo;cgl
+All Terrain Riot Control Transport#Fo2;bcl;lin1#TUPOST;scl
+All Terrain Scout Transport#Fo;bcl#Fo;cgl#fo2;bch;lin1
 All-Terrain Anti-Aircraft
 Alliance T-47 Airspeeder
 Alliance T-47 Sandspeeder
