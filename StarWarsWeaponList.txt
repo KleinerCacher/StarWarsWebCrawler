@@ -142,33 +142,35 @@ All Terrain Armored Transport#fo;lch;lin1#fo2;bch;lin1
 All Terrain Personal Transport#Fo2;bcl;lin1#fo;cgl
 All Terrain Riot Control Transport#Fo2;bcl;lin1#TUPOST;scl
 All Terrain Scout Transport#Fo;bcl#Fo;cgl#fo2;bch;lin1
-All-Terrain Anti-Aircraft
-Alliance T-47 Airspeeder
-Alliance T-47 Sandspeeder
-Aratech 'Shiphand' Cargo Skiff
-Aratech 57-D Speeder Bike
-Aratech 74-Z Military Speeder Bike
-Arrow-7 Airspeeder, Customized
-AT-EST Exploration and Survey Walker
-AV-21 Landspeeder
-CAV-11 'Condor' Airspeeder
-CEC D-22 'Screamer' Speeder Bike
-Corellian Mining Corporation Digger Crawler
-G35 'Silver Cloud' Airspeeder
-Guardian 5E Personal Defense Speeder
-Hunchback Construction Strider
-Hutt Repulsorsled
-I-C2 Civil-Industrial Droid
-Incom T-16 Skyhopper
-Incom T-47 Airspeeder
-Invader AA-9 Assault Airspeeder
-Jawa Salvage Skiff
-KV Swoop
-Mauler Tactical Responder
-MEV2 'Dug Digger'
-Mobquet Flare-S Swoop
-Mobquet S-5 'Flashfury' Swoop
-MSP100 Pteropter Hover Pod
+All-Terrain Anti-Aircraft#TUALL2;fcl#Other;or#TUALL;CM;-lim,lim36
+Alliance T-47 Airspeeder#Fo2;bch;lin1#AF;emh
+Alliance T-47 Sandspeeder#Fo2;bch;lin1#af;bclr
+Aratech 'Shiphand' Cargo Skiff#
+Aratech 57-D Speeder Bike#
+Aratech 74-Z Military Speeder Bike#Fo;rpl
+Arrow-7 Airspeeder, Customized#af;rpl
+AT-EST Exploration and Survey Walker#Fo;bcl
+AV-21 Landspeeder#Fo2;bcl;lin1#top;icl
+CAV-11 'Condor' Airspeeder#
+CEC D-22 'Screamer' Speeder Bike#
+Corellian Mining Corporation Digger Crawler#
+G35 'Silver Cloud' Airspeeder#
+Guardian 5E Personal Defense Speeder#TUREALL;ab
+HSP-10 Pursuit Airspeeder#Fo2;bcl;lin1#fo;icl
+Hunchback Construction Strider#fo;tbm
+Hutt Repulsorsled#fore;ab
+Hyperfoil 1000-XTC#
+I-C2 Civil-Industrial Droid#
+Incom T-16 Skyhopper#
+Incom T-47 Airspeeder#AF;emh
+Invader AA-9 Assault Airspeeder#fo;bcl#other;forward mini rocket launcher All, Dam3, crit4, blast1, breach2,limAmmo5, add black die
+Jawa Salvage Skiff#
+KV Swoop#
+Mauler Tactical Responder#tufo;bcl
+MEV2 'Dug Digger'#Other;Beamdrill(Person Weapon Scale) Range:Some meters,Forward,Dam5,Crit3,Bre3,InAcc3
+Mobquet Flare-S Swoop#
+Mobquet S-5 'Flashfury' Swoop#
+MSP100 Pteropter Hover Pod#fo;rrbc#fo;plc;lin1
 Nebulon-Q Racing Swoop
 Needle NE-4 Cloud Car Interceptor
 Ord Radama Landspeeder

@@ -53,11 +53,20 @@ namespace WebCrawler
                 case "BCH":
                     weapon = Weapon.GetWeapon(Weapon.WeaponType.BlasterCannonHeavy);
                     break;
+                case "BCLR":
+                    weapon = Weapon.GetWeapon(Weapon.WeaponType.BlasterCannonLightRepeating);
+                    break;
                 case "CM":
                     weapon = Weapon.GetWeapon(Weapon.WeaponType.ConcussionMissile);
                     break;
                 case "CGL":
                     weapon = Weapon.GetWeapon(Weapon.WeaponType.ConcussionGrenadeLauncher);
+                    break;
+                case "EMH":
+                    weapon = Weapon.GetWeapon(Weapon.WeaponType.ElectromagnaticHarpoon);
+                    break;
+                case "FCL":
+                    weapon = Weapon.GetWeapon(Weapon.WeaponType.FlakCannonLight);
                     break;
                 case "ICL":
                     weapon = Weapon.GetWeapon(Weapon.WeaponType.IonCannonLight);
@@ -115,6 +124,15 @@ namespace WebCrawler
                     break;
                 case "VLW":
                     weapon = Weapon.GetWeapon(Weapon.WeaponType.VlWarhead);
+                    break;
+                case "RPL":
+                    weapon = Weapon.GetWeapon(Weapon.WeaponType.RepeatingBlasterLight);
+                    break;
+                case "RRBC":
+                    weapon = Weapon.GetWeapon(Weapon.WeaponType.RepeatingBlasterCannonRotary);
+                    break;
+                case "PLC":
+                    weapon = Weapon.GetWeapon(Weapon.WeaponType.PersonalLaserCannon);
                     break;
                 default:
                     throw new ArgumentException("Shortcut not available");

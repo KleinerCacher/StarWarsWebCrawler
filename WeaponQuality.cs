@@ -69,6 +69,15 @@ namespace WebCrawler
                 case "TRA":
                     quality = new WeaponQuality("Tractor");
                     break;
+                case "VIC":
+                    quality = new WeaponQuality("Vicious");
+                    break;
+                case "KNO":
+                    quality = new WeaponQuality("Knockdown");
+                    break;
+                case "PIER":
+                    quality = new WeaponQuality("Pierce");
+                    break;
                 default:
                     throw new ArgumentException("WeaponQuality - Shortcut not available");
             }
