@@ -6,6 +6,7 @@ using System.Linq;
 
 namespace WebCrawler
 {
+    [Serializable]
     public class Mount
     {
         private string[] unitsMap = new[] { "Zero", "One", "Two", "Three", "Four",
@@ -43,6 +44,8 @@ namespace WebCrawler
             Hull,
             Top
         }
+
+        public Mount() { }
 
         public Mount(string mountShortcut)
         {

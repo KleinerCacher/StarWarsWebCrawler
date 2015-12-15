@@ -4,9 +4,11 @@ using System.Web;
 using System;
 using System.Globalization;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 
 namespace WebCrawler
 {
+    [Serializable, XmlInclude(typeof(Vehicle)), XmlInclude(typeof(SpaceShip))]
     public class Transportation : IndexData
     {
         public string Silhouette { get; set; }

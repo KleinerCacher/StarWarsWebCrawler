@@ -4,6 +4,7 @@ using System.Linq;
 
 namespace WebCrawler
 {
+    [Serializable]
     public class SpaceShip : Transportation
     {
         public string HyperDrive { get; set; }

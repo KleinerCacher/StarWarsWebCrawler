@@ -5,10 +5,13 @@ using System.Linq;
 
 namespace WebCrawler
 {
+    [Serializable]
     public class WeaponQuality
     {
         public string Name { get; set; }
         public int Value { get; set; }
+
+        public WeaponQuality() { }
 
         public WeaponQuality(string name)
         {

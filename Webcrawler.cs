@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Xml.Serialization;
 
 namespace WebCrawler
 {
     public class Webcrawler
     {
+        const string filepathIndexedData = @"AllIndexedData.xml";
+
         private readonly Uri baseUrl;
 
         /// <summary>
@@ -18,20 +21,52 @@ namespace WebCrawler
             this.baseUrl = mainUrl;
         }
 
-        public void CrawlWeb()
+        public void CrawlWeb(bool getNewData, bool generateExcel, bool generateTransportationList)
+        {
+            GetDataFromWeb();
+            GenerateDataFromXml();       
+            GenerateListOfTransportation();
+        }
+
+        private void GetDataFromWeb()
         {
             AllIndexData data = new AllIndexData();
             data.SpaceShips = TransportationCrawler.CrawlTransportation(baseUrl, TransportationCrawler.Type.SpaceShip);
-            ExcelGenerator.GenerateExcelFile("spaceships.xlsx", data.SpaceShips);
-
             data.Vehicles = TransportationCrawler.CrawlTransportation(baseUrl, TransportationCrawler.Type.Vehicle);
-            ExcelGenerator.GenerateExcelFile("vehicles.xlsx", data.Vehicles);
 
-            GenerateListOfShips(data);
+            Serialize(data);
         }
 
-        private void GenerateListOfShips(AllIndexData data)
+        private void Serialize(AllIndexData data)
         {
+            XmlSerializer serializer = new XmlSerializer(typeof(AllIndexData));
+
+            using (TextWriter WriteFileStream = new StreamWriter(filepathIndexedData))
+            {
+                serializer.Serialize(WriteFileStream, data);
+            }
+        }
+
+        private void GenerateDataFromXml()
+        {
+            AllIndexData data = Deserialize();
+
+            ExcelGenerator.GenerateExcelFile("spaceships.xlsx", data.SpaceShips);
+            ExcelGenerator.GenerateExcelFile("vehicles.xlsx", data.Vehicles);
+        }
+
+        private AllIndexData Deserialize()
+        {
+            using (FileStream readFileStream = new FileStream(filepathIndexedData, FileMode.Open, FileAccess.Read, FileShare.Read))
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(AllIndexData));
+                return (AllIndexData)serializer.Deserialize(readFileStream);
+            }
+        }
+
+        private void GenerateListOfTransportation()
+        {
+            AllIndexData data = Deserialize();
             List<string> namesOfShips = new List<string>();
             namesOfShips.AddRange(data.SpaceShips.Select(s => s.Name));
             namesOfShips.AddRange(data.Vehicles.Select(v => v.Name));

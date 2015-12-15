@@ -3,6 +3,7 @@ using System;
 
 namespace WebCrawler
 {
+    [Serializable]
     public class Vehicle : Transportation
     {
         public Vehicle()
@@ -23,7 +24,6 @@ namespace WebCrawler
             HtmlWeb htmlWeb = new HtmlWeb();
             HtmlDocument htmlDocument = htmlWeb.Load(transportMin.Link);
             Vehicle vehicle = new Vehicle(transportMin, htmlDocument);
-
 
             return vehicle;
         }
