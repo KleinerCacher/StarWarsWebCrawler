@@ -87,7 +87,6 @@ namespace WebCrawler
         private static string GetWeaponListText(List<Weapon> list)
         {
             StringBuilder sb = new StringBuilder();
-
             list.Sort(new RangeComparer());
 
             for (int i = 0; i < list.Count; i++)

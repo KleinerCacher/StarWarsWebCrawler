@@ -10,19 +10,15 @@ namespace WebCrawler
     {
         public string Name { get; set; }
         public int Value { get; set; }
+        public string Iconstring { get; set; }
 
         public WeaponQuality() { }
 
-        public WeaponQuality(string name)
+        public WeaponQuality(string name, string iconString)
         {
             Name = name;
             Value = 0;
-        }
-
-        public WeaponQuality(string name, int value)
-        {
-            Name = name;
-            Value = value;
+            Iconstring = iconString;
         }
 
         public static WeaponQuality GetWeaponQualityByShortcut(string shortcut)
@@ -34,52 +30,52 @@ namespace WebCrawler
             switch (shortcutWithoutNumber.ToUpperInvariant())
             {
                 case "AF":
-                    quality = new WeaponQuality("Autofire");
+                    quality = new WeaponQuality("Autofire", "(autofire)");
                     break;
                 case "BLA":
-                    quality = new WeaponQuality("Blast");
+                    quality = new WeaponQuality("Blast", "(blast)");
                     break;
                 case "BRE":
-                    quality = new WeaponQuality("Breach");
+                    quality = new WeaponQuality("Breach", "(breach)");
                     break;
                 case "DIS":
-                    quality = new WeaponQuality("Disorient");
+                    quality = new WeaponQuality("Disorient", "(disorient)");
                     break;
                 case "STUN":
-                    quality = new WeaponQuality("Stun Damage");
+                    quality = new WeaponQuality("Stun Damage", "(stundamage)");
                     break;
                 case "GUI":
-                    quality = new WeaponQuality("Guided");
+                    quality = new WeaponQuality("Guided", "(guided)");
                     break;
                 case "LIM":
-                    quality = new WeaponQuality("Limited Ammo");
+                    quality = new WeaponQuality("Limited Ammo", "(limitedammo)");
                     break;
                 case "SF":
-                    quality = new WeaponQuality("Slow Firing");
+                    quality = new WeaponQuality("Slow Firing", "(slowfiring)");
                     break;
                 case "ION":
-                    quality = new WeaponQuality("Ion");
+                    quality = new WeaponQuality("Ion", "(ion)");
                     break;
                 case "ACC":
-                    quality = new WeaponQuality("Accurate");
+                    quality = new WeaponQuality("Accurate", "(accurate)");
                     break;
                 case "INACC":
-                    quality = new WeaponQuality("Inaccurate");
+                    quality = new WeaponQuality("Inaccurate", "(inaccurate)");
                     break;
                 case "LIN":
-                    quality = new WeaponQuality("Linked");
+                    quality = new WeaponQuality("Linked", "(linked)");
                     break;
                 case "TRA":
-                    quality = new WeaponQuality("Tractor");
+                    quality = new WeaponQuality("Tractor", "(tractor)");
                     break;
                 case "VIC":
-                    quality = new WeaponQuality("Vicious");
+                    quality = new WeaponQuality("Vicious", "(vicious)");
                     break;
                 case "KNO":
-                    quality = new WeaponQuality("Knockdown");
+                    quality = new WeaponQuality("Knockdown", "(knockdown)");
                     break;
                 case "PIER":
-                    quality = new WeaponQuality("Pierce");
+                    quality = new WeaponQuality("Pierce", "(pierce)");
                     break;
                 default:
                     throw new ArgumentException("WeaponQuality - Shortcut not available");
