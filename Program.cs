@@ -7,7 +7,7 @@ namespace WebCrawler
         static void Main(string[] args)
         {
             Webcrawler webcrawler = new Webcrawler(new Uri("http://swrpg.viluppo.net/"));
-            webcrawler.CrawlWeb(true, true, false);
+            webcrawler.CrawlWeb(false, true, false);
         }
     }
 }

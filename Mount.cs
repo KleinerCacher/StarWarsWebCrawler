@@ -170,6 +170,10 @@ namespace WebCrawler
             {
                 return "Aft, Port, Starbord";
             }
+            else if (allOtherFlags.Contains(MountFlags.Wing))
+            {
+                return "Forward";
+            }
             else
             {
                 StringBuilder sb = new StringBuilder();
