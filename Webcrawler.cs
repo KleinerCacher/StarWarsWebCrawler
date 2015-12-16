@@ -23,9 +23,20 @@ namespace WebCrawler
 
         public void CrawlWeb(bool getNewData, bool generateExcel, bool generateTransportationList)
         {
-            GetDataFromWeb();
-            GenerateDataFromXml();       
-            GenerateListOfTransportation();
+            if (getNewData)
+            {
+                GetDataFromWeb(); 
+            }
+
+            if (generateExcel)
+            {
+                GenerateDataFromXml();  
+            }
+
+            if (generateTransportationList)
+            {
+                GenerateListOfTransportation(); 
+            }
         }
 
         private void GetDataFromWeb()

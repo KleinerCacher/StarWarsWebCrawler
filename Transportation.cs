@@ -35,15 +35,23 @@ namespace WebCrawler
         public string Rarity { get; set; }
         public string HardPoints { get; set; }
         public string Weapons { get; set; }
-        public List<Weapon> WeaponList { get; set; }
         public string Indexes { get; set; }
+
+        [XmlIgnore]
+        public List<Weapon> WeaponList
+        {
+            get
+            {
+                return TransportationWeaponMapping.Instance.GetWeaponsByTransportationName(Name);
+            }
+        }
 
         /// <summary>
         /// Initializes a new instance of the Transportation class.
         /// </summary>
         public Transportation()
         {
-            WeaponList = new List<Weapon>();
+           
         }
 
         /// <summary>
@@ -55,7 +63,7 @@ namespace WebCrawler
             Silhouette = GetSingleNodeText(htmlDocument, "//div[@class='silhoutte']//span[@class='item_value']");
             Speed = GetSingleNodeText(htmlDocument, "//div[@class='speed']//span[@class='item_value']");
             Handling = GetSingleNodeText(htmlDocument, "//div[@class='handling']//span[@class='item_value']");
-            
+
             string defense = GetSingleNodeText(htmlDocument, "//div[@class='defense']//span[@class='item_value']");
             if (!string.IsNullOrEmpty(defense))
             {
@@ -68,7 +76,7 @@ namespace WebCrawler
                 foreach (string defenseSide in allDefense)
                 {
                     int specificDefense;
-                    if (int.TryParse(defenseSide, out specificDefense ))
+                    if (int.TryParse(defenseSide, out specificDefense))
                     {
                         DefenseMaximum += specificDefense;
                     }
@@ -100,13 +108,11 @@ namespace WebCrawler
 
             Cost = transportMin.Cost;
             Rarity = transportMin.Rarity;
-            CostRarity = String.Format(CultureInfo.InvariantCulture,"{0} credits / {1}", Cost, Rarity);
+            CostRarity = String.Format(CultureInfo.InvariantCulture, "{0} credits / {1}", Cost, Rarity);
 
             HardPoints = GetSingleNodeTextByNodeCollection(itemDetailNodes, "Customization");
             Weapons = GetSingleNodeTextByNodeCollection(itemDetailNodes, "Weapons");
             Indexes = GetSingleNodeTextByNodeCollection(itemDetailNodes, "Indexes");
-
-            WeaponList = TransportationWeaponMapping.Instance.GetWeaponsByTransportationName(Name);
         }
 
         private static string GetSingleNodeText(HtmlDocument htmlNode, string xpath)
