@@ -87,10 +87,14 @@ namespace WebCrawler
         private static string GetWeaponListText(List<Weapon> list)
         {
             StringBuilder sb = new StringBuilder();
+
+            list.Sort(new RangeComparer());
+
             for (int i = 0; i < list.Count; i++)
             {
                 Weapon weapon = list[i];
-                sb.Append(weapon.GetWeaponText());
+                sb.Append(weapon.GetIconWeaponText());
+                sb.Append("</br>");
 
                 if (i != list.Count - 1)
                 {

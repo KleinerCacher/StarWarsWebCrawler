@@ -125,7 +125,17 @@ namespace WebCrawler
             return sb.ToString();
         }
 
-        public static string GetFireArc(List<Mount> mounts)
+        public static string GetFireArcAsText(List<Mount> mounts)
+        {
+            return GetFireArc(mounts, true);
+        }
+
+        public static string GetFireArcAsIcon(List<Mount> mounts)
+        {
+            return GetFireArc(mounts, false);
+        }
+
+        private static string GetFireArc(List<Mount> mounts, bool asText)
         {
             List<MountFlags> allOtherFlags = mounts.SelectMany(x => x.otherFlags).Distinct().ToList();
             List<MountFlags> allDirectionFlags = mounts.SelectMany(x => x.directionFlags).Distinct().ToList();
@@ -141,7 +151,24 @@ namespace WebCrawler
                     && allDirectionFlags.Contains(MountFlags.Port)
                     && allDirectionFlags.Contains(MountFlags.Starbord)))
             {
-                return "All";
+                string text = asText ? "All" : "(all)";
+
+                if (asText)
+                {
+                    return "All";
+                }
+                else
+                {
+                    if (allDirectionFlags.Contains(MountFlags.Dorsal)
+                        && allDirectionFlags.Contains(MountFlags.Ventral))
+                    {
+                        return "(all)2";
+                    }
+                    else
+                    {
+                        return "(all)";
+                    }
+                }
             }
             else if (allDirectionFlags.Contains(MountFlags.Ventral)
                 && !allDirectionFlags.Contains(MountFlags.Forward)
@@ -159,7 +186,7 @@ namespace WebCrawler
                 && !allDirectionFlags.Contains(MountFlags.Starbord)
                 && !allDirectionFlags.Contains(MountFlags.Dorsal))
             {
-                return "Forward, Port, Starbord";
+                return asText ? "Forward, Port, Starbord" : "(forwardportstarbord)";
             }
             else if (allOtherFlags.Contains(MountFlags.Turret) && allDirectionFlags.Contains(MountFlags.Aft)
                && !allDirectionFlags.Contains(MountFlags.Ventral)
@@ -168,23 +195,89 @@ namespace WebCrawler
                && !allDirectionFlags.Contains(MountFlags.Starbord)
                && !allDirectionFlags.Contains(MountFlags.Dorsal))
             {
-                return "Aft, Port, Starbord";
+                return asText ? "Aft, Port, Starbord" : "(portstarbordaft)";
             }
             else if (allOtherFlags.Contains(MountFlags.Wing))
             {
-                return "Forward";
+                return asText ? "Forward" : "(forward)";
             }
             else
             {
-                StringBuilder sb = new StringBuilder();
-                for (int j = 0; j < allDirectionFlags.Count; j++)
+                if (asText)
                 {
-                    sb.Append(Enum.GetName(typeof(MountFlags), allDirectionFlags[j]));
-                    string separatedString = j != allDirectionFlags.Count - 1 ? ", " : string.Empty;
-                    sb.Append(separatedString);
-                }
+                    StringBuilder sb = new StringBuilder();
+                    for (int j = 0; j < allDirectionFlags.Count; j++)
+                    {
+                        sb.Append(Enum.GetName(typeof(MountFlags), allDirectionFlags[j]));
+                        string separatedString = j != allDirectionFlags.Count - 1 ? ", " : string.Empty;
+                        sb.Append(separatedString);
+                    }
 
-                return sb.ToString();
+                    return sb.ToString();
+                }
+                else
+                {
+                    if (allDirectionFlags.Contains(MountFlags.Forward)
+                        && allDirectionFlags.Contains(MountFlags.Port)
+                        && allDirectionFlags.Contains(MountFlags.Starbord)
+                        && allDirectionFlags.Contains(MountFlags.Aft))
+                    {
+                        return "(all)";
+                    }
+                    else if (allDirectionFlags.Contains(MountFlags.Forward)
+                         && allDirectionFlags.Contains(MountFlags.Port)
+                         && allDirectionFlags.Contains(MountFlags.Starbord))
+                    {
+                        return "(forwardportstarbord)";
+                    }
+                    else if (allDirectionFlags.Contains(MountFlags.Forward)
+                         && allDirectionFlags.Contains(MountFlags.Port)
+                         && allDirectionFlags.Contains(MountFlags.Aft))
+                    {
+                        return "(forwardportaft)";
+                    }
+                    else if (allDirectionFlags.Contains(MountFlags.Forward)
+                         && allDirectionFlags.Contains(MountFlags.Starbord)
+                         && allDirectionFlags.Contains(MountFlags.Aft))
+                    {
+                        return "(forwardstarbordaft)";
+                    }
+                    else if (allDirectionFlags.Contains(MountFlags.Forward)
+                         && allDirectionFlags.Contains(MountFlags.Aft))
+                    {
+                        return "(forwardaft)";
+                    }
+                    else if (allDirectionFlags.Contains(MountFlags.Forward))
+                    {
+                        return "(forward)";
+                    }
+                    else if (allDirectionFlags.Contains(MountFlags.Aft)
+                         && allDirectionFlags.Contains(MountFlags.Port)
+                         && allDirectionFlags.Contains(MountFlags.Starbord))
+                    {
+                        return "(portstarbordaft)";
+                    }
+                    else if (allDirectionFlags.Contains(MountFlags.Port)
+                         && allDirectionFlags.Contains(MountFlags.Starbord))
+                    {
+                        if (mounts.Count == 1 && mounts[0].numberOfWeapons > 1)
+                        {
+                            return "(port)" + mounts[0].numberOfWeapons + ", (starbord)" + mounts[0].numberOfWeapons;
+                        }
+
+                        return "(portstarbord)2";
+                    }
+                    else if (allDirectionFlags.Contains(MountFlags.Port))
+                    {
+                        return "(port)";
+                    }
+                    else if (allDirectionFlags.Contains(MountFlags.Starbord))
+                    {
+                        return "(starbord)";
+                    }
+
+                    return "Ist noch nicht integriert";
+                }
             }
         }
 

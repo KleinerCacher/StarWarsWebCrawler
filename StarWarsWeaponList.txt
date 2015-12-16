@@ -1,7 +1,7 @@
 ﻿4R3 Light Assault Transport#ReFo;LCM;Lin1#2ReFo2;icl;Lin1#2Fo;ptl
 A-7 Hunter Interceptor#Fo;LCM;Lin1
 A-Type Stiletto#Fo;LCM;Acc1#Fo;CM;-Lim,-SF,Acc1,Lim1
-A/SF-01 'B-Wing' Heavy Fast Attack Starfighter#HaFo;icl;Lin2#HaFo;lch
+A/SF-01 'B-Wing' Heavy Fast Attack Starfighter#FoHa;icl;Lin2#FoHa;lch
 Action VI Bulk Transport#
 Alpha-3 Nimbus 'V-Wing' Interceptor#PoStWinFo2;lcl;lin3#Fo;CM
 Alpha-class XG-1 'Star Wing' Assault Gunboat#Fo;lcm;Lin1#Fo;icl;lin1#Fo;CM

@@ -16,5 +16,10 @@ namespace WebCrawler
         {
             return Name;
         }
+
+        public override string GetIconWeaponText()
+        {
+            return Name;
+        }
     }
 }

@@ -58,6 +58,7 @@
     <Compile Include="Mount.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RangeComparer.cs" />
     <Compile Include="SpaceShip.cs" />
     <Compile Include="Transportation.cs" />
     <Compile Include="TransportationCrawler.cs" />
