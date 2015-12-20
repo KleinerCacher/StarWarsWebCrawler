@@ -42,7 +42,8 @@ namespace WebCrawler
             Wing,
             All,
             Hull,
-            Top
+            Top,
+            Down
         }
 
         public Mount() { }
@@ -132,11 +133,41 @@ namespace WebCrawler
 
         public static string GetFireArcAsIcon(List<Mount> mounts)
         {
+            if (mounts.Count > 0 && MountsHaveDifferentNumberOfWeapons(mounts))
+            {
+                StringBuilder sb = new StringBuilder();
+                foreach (var mount in mounts)
+                {
+                    sb.AppendFormat("{0};", GetFireArc(new List<Mount>() { mount }, false));
+                }
+
+                sb.Remove(sb.Length - 1, 1);
+                return sb.ToString();
+            }
+
             return GetFireArc(mounts, false);
+        }
+
+        private static bool MountsHaveDifferentNumberOfWeapons(List<Mount> mounts)
+        {
+            int numberOfLastMountsWeapons = int.MinValue;
+            foreach (var mount in mounts)
+            {
+                if (numberOfLastMountsWeapons != int.MinValue && numberOfLastMountsWeapons != mount.numberOfWeapons)
+                {
+                    return true;
+                }
+
+                numberOfLastMountsWeapons = mount.numberOfWeapons;
+            }
+
+            return false;
         }
 
         private static string GetFireArc(List<Mount> mounts, bool asText)
         {
+            string text = string.Empty;
+
             List<MountFlags> allOtherFlags = mounts.SelectMany(x => x.otherFlags).Distinct().ToList();
             List<MountFlags> allDirectionFlags = mounts.SelectMany(x => x.directionFlags).Distinct().ToList();
 
@@ -151,33 +182,28 @@ namespace WebCrawler
                     && allDirectionFlags.Contains(MountFlags.Port)
                     && allDirectionFlags.Contains(MountFlags.Starbord)))
             {
-                string text = asText ? "All" : "(all)";
+                text = asText ? "All" : "(all)";
 
                 if (asText)
                 {
-                    return "All";
+                    text = "All";
                 }
                 else
                 {
                     if (allDirectionFlags.Contains(MountFlags.Dorsal)
                         && allDirectionFlags.Contains(MountFlags.Ventral))
                     {
-                        return "(all)2";
+                        text = "(all)2";
                     }
                     else
                     {
-                        return "(all)";
+                        text = "(all)";
                     }
                 }
             }
-            else if (allDirectionFlags.Contains(MountFlags.Ventral)
-                && !allDirectionFlags.Contains(MountFlags.Forward)
-                && !allDirectionFlags.Contains(MountFlags.Aft)
-                && !allDirectionFlags.Contains(MountFlags.Port)
-                && !allDirectionFlags.Contains(MountFlags.Starbord)
-                && !allDirectionFlags.Contains(MountFlags.Dorsal))
+            else if (allOtherFlags.Contains(MountFlags.Down))
             {
-                return "Down";
+                text = "Down";
             }
             else if (allOtherFlags.Contains(MountFlags.Turret) && allDirectionFlags.Contains(MountFlags.Forward)
                 && !allDirectionFlags.Contains(MountFlags.Ventral)
@@ -186,7 +212,7 @@ namespace WebCrawler
                 && !allDirectionFlags.Contains(MountFlags.Starbord)
                 && !allDirectionFlags.Contains(MountFlags.Dorsal))
             {
-                return asText ? "Forward, Port, Starbord" : "(forwardportstarbord)";
+                text = asText ? "Forward, Port, Starbord" : "(forwardportstarbord)";
             }
             else if (allOtherFlags.Contains(MountFlags.Turret) && allDirectionFlags.Contains(MountFlags.Aft)
                && !allDirectionFlags.Contains(MountFlags.Ventral)
@@ -195,11 +221,11 @@ namespace WebCrawler
                && !allDirectionFlags.Contains(MountFlags.Starbord)
                && !allDirectionFlags.Contains(MountFlags.Dorsal))
             {
-                return asText ? "Aft, Port, Starbord" : "(portstarbordaft)";
+                text = asText ? "Aft, Port, Starbord" : "(portstarbordaft)";
             }
             else if (allOtherFlags.Contains(MountFlags.Wing))
             {
-                return asText ? "Forward" : "(forward)";
+                text = asText ? "Forward" : "(forward)";
             }
             else
             {
@@ -213,7 +239,7 @@ namespace WebCrawler
                         sb.Append(separatedString);
                     }
 
-                    return sb.ToString();
+                    text = sb.ToString();
                 }
                 else
                 {
@@ -222,63 +248,71 @@ namespace WebCrawler
                         && allDirectionFlags.Contains(MountFlags.Starbord)
                         && allDirectionFlags.Contains(MountFlags.Aft))
                     {
-                        return "(all)";
+                        text = "(all)";
                     }
                     else if (allDirectionFlags.Contains(MountFlags.Forward)
                          && allDirectionFlags.Contains(MountFlags.Port)
                          && allDirectionFlags.Contains(MountFlags.Starbord))
                     {
-                        return "(forwardportstarbord)";
+                        text = "(forwardportstarbord)";
                     }
                     else if (allDirectionFlags.Contains(MountFlags.Forward)
                          && allDirectionFlags.Contains(MountFlags.Port)
                          && allDirectionFlags.Contains(MountFlags.Aft))
                     {
-                        return "(forwardportaft)";
+                        text = "(forwardportaft)";
                     }
                     else if (allDirectionFlags.Contains(MountFlags.Forward)
                          && allDirectionFlags.Contains(MountFlags.Starbord)
                          && allDirectionFlags.Contains(MountFlags.Aft))
                     {
-                        return "(forwardstarbordaft)";
+                        text = "(forwardstarbordaft)";
                     }
                     else if (allDirectionFlags.Contains(MountFlags.Forward)
                          && allDirectionFlags.Contains(MountFlags.Aft))
                     {
-                        return "(forwardaft)";
+                        text = "(forwardaft)";
                     }
                     else if (allDirectionFlags.Contains(MountFlags.Forward))
                     {
-                        return "(forward)";
+                        text = "(forward)";
                     }
                     else if (allDirectionFlags.Contains(MountFlags.Aft)
                          && allDirectionFlags.Contains(MountFlags.Port)
                          && allDirectionFlags.Contains(MountFlags.Starbord))
                     {
-                        return "(portstarbordaft)";
+                        text = "(portstarbordaft)";
                     }
                     else if (allDirectionFlags.Contains(MountFlags.Port)
                          && allDirectionFlags.Contains(MountFlags.Starbord))
                     {
-                        if (mounts.Count == 1 && mounts[0].numberOfWeapons > 1)
-                        {
-                            return "(port)" + mounts[0].numberOfWeapons + ", (starbord)" + mounts[0].numberOfWeapons;
-                        }
-
-                        return "(portstarbord)2";
+                        text = "(portstarbord)";
                     }
                     else if (allDirectionFlags.Contains(MountFlags.Port))
                     {
-                        return "(port)";
+                        text = "(port)";
                     }
                     else if (allDirectionFlags.Contains(MountFlags.Starbord))
                     {
-                        return "(starbord)";
+                        text = "(starbord)";
                     }
-
-                    return "Ist noch nicht integriert";
+                    else if (allDirectionFlags.Contains(MountFlags.Aft))
+                    {
+                        text = "(aft)";
+                    }
+                    else
+                    {
+                        text = "Ist noch nicht integriert";
+                    }
                 }
             }
+
+            if (mounts[0].numberOfWeapons > 1)
+            {
+                text += mounts[0].numberOfWeapons;
+            }
+
+            return text;
         }
 
         private void InitializeFlagsFromRemainingShortcut(string mountShortcut)
@@ -347,6 +381,11 @@ namespace WebCrawler
             if (mountShortcut.Contains("TOP"))
             {
                 otherFlags.Add(MountFlags.Top);
+            }
+
+            if (mountShortcut.Contains("DWN"))
+            {
+                otherFlags.Add(MountFlags.Down);
             }
         }
 

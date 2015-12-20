@@ -12,6 +12,7 @@ namespace WebCrawler
 
         private const string fileName = "StarWarsWeaponList.txt";
         private Hashtable weaponsByName = new Hashtable();
+        private Dictionary<string, string> transportationWithAdditionalNames = new Dictionary<string, string>();
 
         private TransportationWeaponMapping()
         {
@@ -33,8 +34,20 @@ namespace WebCrawler
 
         private void ConvertLineToWeaponListAndSaveToWeaponList(string line)
         {
+            if (line.StartsWith("--"))
+            {
+                // Commentline do not use
+                return;
+            }
+
             string[] sections = line.Split(new char[] { '#' }, StringSplitOptions.RemoveEmptyEntries);
             string name = sections[0].Trim();
+            if (name.Contains("("))
+            {
+                string additionalName = name.Substring(name.IndexOf('(') + 1, name.LastIndexOf(')') - name.IndexOf('(') - 1);
+                name = name.Substring(0, name.IndexOf('('));
+                transportationWithAdditionalNames.Add(name, additionalName);
+            }
 
             List<Weapon> weaponList = new List<Weapon>();
             for (int i = 1; i < sections.Length; i++)
@@ -44,6 +57,16 @@ namespace WebCrawler
             }
 
             weaponsByName.Add(name, weaponList);
+        }
+
+        public string GetAdditionalTransportationNameIfSet(string currentTransportationName)
+        {
+            if (transportationWithAdditionalNames.ContainsKey(currentTransportationName))
+            {
+                return transportationWithAdditionalNames[currentTransportationName];
+            }
+
+            return string.Empty;
         }
 
         public List<Weapon> GetWeaponsByTransportationName(string name)

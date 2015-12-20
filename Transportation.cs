@@ -46,6 +46,15 @@ namespace WebCrawler
             }
         }
 
+        [XmlIgnore]
+        public string AdditionalName
+        {
+            get
+            {
+                return TransportationWeaponMapping.Instance.GetAdditionalTransportationNameIfSet(Name);
+            }
+        }
+
         /// <summary>
         /// Initializes a new instance of the Transportation class.
         /// </summary>
